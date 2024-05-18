@@ -34,10 +34,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC        &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp DEL
-&kp BACKSPACE  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp ESC        &kp Q  &kp W  &kp E     &kp R      &kp T          &kp Y  &kp U  &kp I      &kp O    &kp P     &kp DEL
+&kp BACKSPACE  &kp A  &kp S  &kp D     &kp F      &kp G          &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp V      &kp B          &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                             &kp LGUI  &kp LSHFT  &lt 1 SPACE    &to 3  &mo 1  &kp RALT
             >;
         };
 
@@ -54,7 +54,7 @@
 &kp TAB     &kp N1           &kp N2          &kp N3             &kp N4            &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3      &bt BT_SEL 4       &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &none   &trans
 &kp LSHFT   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &none
-                                             &kp LGUI           &trans            &kp SPACE          &kp RET          &trans           &kp RALT
+                                             &kp LGUI           &trans            &kp SPACE          &none            &trans           &kp RALT
             >;
         };
 
@@ -78,19 +78,19 @@
         col {
             display-name = "colemak";
             bindings = <
-&kp ESC        &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SEMI  &kp DEL
-&kp BACKSPACE  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O     &kp ENTER
-&kp LSHFT      &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp ESC        &kp Q  &kp W  &kp F     &kp P      &kp B        &kp J  &kp L  &kp U      &kp Y    &kp SEMI  &kp DEL
+&kp BACKSPACE  &kp A  &kp R  &kp S     &kp T      &kp G        &kp M  &kp N  &kp E      &kp I    &kp O     &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C     &kp D      &kp V        &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                             &kp LGUI  &kp LSHFT  &kp SPACE    &to 0  &mo 4  &kp RALT
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp UP_ARROW    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &kp UP_ARROW    &kp END    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
 
             label = "nav";
