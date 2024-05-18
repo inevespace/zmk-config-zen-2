@@ -37,22 +37,6 @@
         };
     };
 
-    macros {
-        wleft: wleft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT)>;
-            label = "WLEFT";
-        };
-
-        wright: wright {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT)>;
-            label = "WRIGHT";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -94,8 +78,8 @@
 
             bindings = <
 &kp TAB     &kp N1           &kp N2          &kp N3             &kp N4            &kp N5             &kp N6           &kp N7           &kp N8           &kp N9           &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2       &trans            &trans             &none            &trans           &trans           &trans           &none   &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &none
+&bt BT_CLR  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2       &trans            &soft_off          &none            &trans           &trans           &trans           &none   &trans
+&sys_reset  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &ext_power EP_OFF  &ext_power EP_ON  &rgb_ug RGB_EFF    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans  &none
                                              &trans             &trans            &none              &none            &none            &trans
             >;
         };
@@ -110,7 +94,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp TAB  &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none
 &trans   &none         &none         &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp SQT   &kp GRAVE
 &trans   &out OUT_USB  &out OUT_BLE  &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                                      &kp LGUI  &trans    &kp SPACE    &none      &trans     &kp RALT
@@ -119,9 +103,9 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(LEFT)    &kp UP_ARROW    &wright    &kp PG_UP  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp PG_DN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &trans          &kp END    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &kp PG_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp HOME        &trans          &kp END        &trans     &trans
                         &trans  &trans  &trans    &trans  &trans          &trans
             >;
 
