@@ -42,6 +42,23 @@
             bindings = <&bt BT_NXT>;
             key-positions = <13 16>;
         };
+
+        gcombo {
+            bindings = <&kp G>;
+            key-positions = <16 15>;
+            layers = <1 0>;
+        };
+
+        mcombo {
+            bindings = <&kp M>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
+
+        kcombo {
+            bindings = <&kp K>;
+            key-positions = <31 32>;
+        };
     };
 
     keymap {
@@ -87,7 +104,7 @@
 &kp TAB     &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &kp N6  &kp N7  &kp N8  &kp N9           &kp N0           &rgb_ug RGB_TOG
 &none       &sk LEFT_ALT  &sk LEFT_META  &sk LSHFT  &sk LCTRL  &none     &none   &none   &none   &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
 &sys_reset  &bootloader   &soft_off      &none      &none      &none     &none   &none   &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
-                                         &none      &none      &none     &none   &none   &none
+                                         &trans     &none      &trans    &none   &none   &none
             >;
         };
 
