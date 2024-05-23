@@ -32,34 +32,6 @@
             key-positions = <0 1>;
         };
 
-        btclr {
-            bindings = <&bt BT_CLR>;
-            key-positions = <12 17>;
-        };
-
-        btnxt {
-            bindings = <&bt BT_NXT>;
-            key-positions = <13 16>;
-        };
-
-        gcombo {
-            bindings = <&kp G>;
-            key-positions = <16 15>;
-            layers = <1 0>;
-        };
-
-        mcombo {
-            bindings = <&kp M>;
-            key-positions = <19 20>;
-            layers = <1>;
-        };
-
-        kcombo {
-            bindings = <&kp K>;
-            key-positions = <31 32>;
-            layers = <1>;
-        };
-
         toplover {
             bindings = <&tog 2>;
             key-positions = <25 34>;
@@ -116,10 +88,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &kp N6  &kp N7  &kp N8  &kp N9           &kp N0           &rgb_ug RGB_TOG
-&none       &sk LEFT_ALT  &sk LEFT_META  &sk LSHFT  &sk LCTRL  &none     &none   &none   &none   &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
-&sys_reset  &bootloader   &soft_off      &none      &none      &none     &none   &none   &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
-                                         &trans     &none      &trans    &none   &none   &none
+&kp TAB     &kp N1        &kp N2         &kp N3      &kp N4     &kp N5    &kp N6  &kp N7  &kp N8  &kp N9           &kp N0           &rgb_ug RGB_TOG
+&bt BT_CLR  &sk LEFT_ALT  &sk LEFT_META  &sk LSHFT   &sk LCTRL  &none     &none   &none   &none   &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
+&sys_reset  &bootloader   &soft_off      &bt BT_NXT  &none      &none     &none   &none   &none   &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
+                                         &trans      &none      &trans    &none   &none   &none
             >;
         };
 
