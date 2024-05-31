@@ -62,10 +62,10 @@
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE     &kp Q  &kp W  &kp F     &kp P      &kp B          &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp DEL
-&kp BACKSPACE  &kp A  &kp R  &kp S     &kp T      &kp G          &kp M        &kp N  &kp E      &kp I    &kp O     &kp ENTER
-&kp LCTRL      &kp Z  &kp X  &kp C     &kp D      &kp V          &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &kp LSHFT  &lt 3 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
+&kp ESCAPE     &kp Q  &kp W    &kp F     &kp P      &kp B          &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp DEL
+&kp BACKSPACE  &kp A  &lt 7 R  &kp S     &kp T      &kp G          &kp M        &kp N  &kp E      &kp I    &kp O     &kp ENTER
+&trans         &kp Z  &kp X    &kp C     &kp D      &kp V          &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                               &kp LGUI  &kp LSHFT  &lt 3 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
             >;
         };
 
@@ -106,9 +106,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &none
-&trans   &none     &none   &none     &none     &none        &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp SEMICOLON  &kp GRAVE
-&trans   &none     &none   &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE       &kp TILDE
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &none
+&trans   &none     &none   &none     &none     &none        &kp PLUS   &kp MINUS  &kp LBKT         &kp RBKT  &kp COLON  &kp GRAVE
+&trans   &none     &none   &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE   &kp TILDE
                            &kp LGUI  &trans    &kp SPACE    &none      &trans     &kp RALT
             >;
         };
@@ -130,6 +130,15 @@
 &bt BT_CLR  &bt BT_NXT   &none      &none  &none  &none    &none  &none  &none  &none  &none  &none
 &sys_reset  &bootloader  &soft_off  &none  &none  &none    &none  &none  &none  &none  &none  &none
                                     &none  &none  &none    &none  &none  &none
+            >;
+        };
+
+        os {
+            bindings = <
+&none  &kp LG(NUMBER_1)  &none  &none      &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none             &none  &kp LSHFT  &none  &none    &kp H  &kp J  &kp K  &kp L  &none  &none
+&none  &none             &none  &none      &none  &none    &none  &none  &none  &none  &none  &none
+                                &none      &none  &none    &none  &none  &none
             >;
         };
     };
