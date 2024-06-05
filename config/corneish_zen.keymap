@@ -83,10 +83,10 @@
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE     &kp Q            &kp W    &kp F         &kp P          &kp B          &kp J        &kp L         &kp U         &kp Y             &kp SQT          &kp DEL
-&kp BACKSPACE  &tph LEFT_ALT A  &lt 7 R  &tph LSHFT S  &tph LCTRL T   &kp G          &kp M        &tph LCTRL N  &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
-&none          &kp Z            &kp X    &kp C         &kp D          &kp V          &kp K        &kp H         &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                         &kp LGUI      &mt LSHFT TAB  &lt 3 SPACE    &lt 4 SPACE  &mo 5         &key_repeat
+&kp ESCAPE       &kp Q            &kp W    &kp F         &kp P          &kp B          &kp J        &kp L         &kp U         &kp Y             &kp SQT          &kp DEL
+&lt 8 BACKSPACE  &tph LEFT_ALT A  &lt 7 R  &tph LSHFT S  &tph LCTRL T   &kp G          &kp M        &tph LCTRL N  &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&none            &kp Z            &kp X    &kp C         &kp D          &kp V          &kp K        &kp H         &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                           &kp LGUI      &mt LSHFT TAB  &lt 3 SPACE    &lt 4 SPACE  &mo 5         &key_repeat
             >;
         };
 
@@ -110,10 +110,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE   &none        &kp N7        &kp N8        &kp N9        &kp EQUAL    &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE   &kp RIGHT_BRACE
-&bt BT_CLR  &none        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &sk LSHFT    &kp PLUS  &kp MINUS       &kp LSHFT             &trans                 &kp SEMICOLON    &kp SQT
-&sys_reset  &bootloader  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0       &none     &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
-                                       &trans        &none         &trans       &none     &none           &none
+&kp TILDE   &kp EXCLAMATION  &tph AMPERSAND N7          &tph ASTERISK N8       &kp N9               &kp EQUAL    &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &kp NON_US_BACKSLASH
+&bt BT_CLR  &none            &tph DOLLAR NUMBER_4       &tph PERCENT N5        &tph CARET NUMBER_6  &none        &kp PLUS  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON    &kp SQT
+&sys_reset  &bootloader      &tph EXCLAMATION NUMBER_1  &tph AT_SIGN NUMBER_2  &tph HASH NUMBER_3   &kp N0       &none     &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
+                                                        &trans                 &none                &trans       &none     &none           &none
             >;
         };
 
@@ -160,6 +160,15 @@
 &none  &none             &none             &kp LSHFT         &none             &none         &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &none  &none
 &none  &none             &none             &none             &none             &none         &none      &none      &none      &none      &none  &none
                                            &none             &none             &none         &none      &none      &none
+            >;
+        };
+
+        rnumpad {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none   &kp N7           &kp N8           &kp N9           &kp ASTERISK  &none
+&none  &none  &none  &none  &none  &none    &none   &kp N4           &kp N5           &kp N6           &kp PLUS      &none
+&none  &none  &none  &none  &none  &none    &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none
+                     &none  &none  &none    &kp N0  &kp DOT          &none
             >;
         };
     };
