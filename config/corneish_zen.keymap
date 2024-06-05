@@ -37,6 +37,18 @@
             bindings = <&tog 2>;
             key-positions = <25 34>;
         };
+
+        j-combo {
+            bindings = <&kp J>;
+            key-positions = <7 19>;
+            layers = <1>;
+        };
+
+        k-combo {
+            bindings = <&kp K>;
+            key-positions = <8 20>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -62,10 +74,10 @@
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE     &kp Q  &kp W    &kp F     &kp P      &kp B          &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp DEL
-&kp BACKSPACE  &kp A  &lt 7 R  &kp S     &kp T      &kp G          &kp M        &kp N  &kp E      &kp I    &kp O     &kp ENTER
-&trans         &kp Z  &kp X    &kp C     &kp D      &kp V          &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                               &kp LGUI  &kp LSHFT  &lt 3 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
+&kp ESCAPE     &kp Q       &kp W    &kp F             &kp P        &kp B          &kp J        &kp L  &kp U      &kp Y    &kp SQT   &kp DEL
+&kp BACKSPACE  &mt LALT A  &lt 7 R  &mt LEFT_SHIFT S  &mt LCTRL T  &kp G          &kp M        &kp N  &kp E      &kp I    &kp O     &kp ENTER
+&trans         &kp Z       &kp X    &kp C             &kp D        &kp V          &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                                    &kp LGUI          &kp LSHFT    &lt 3 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
             >;
         };
 
@@ -135,10 +147,10 @@
 
         os {
             bindings = <
-&none  &kp LG(NUMBER_1)  &none  &none      &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none             &none  &kp LSHFT  &none  &none    &kp H  &kp J  &kp K  &kp L  &none  &none
-&none  &none             &none  &none      &none  &none    &none  &none  &none  &none  &none  &none
-                                &none      &none  &none    &none  &none  &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none    &none      &none      &none      &none      &none  &none
+&none  &none             &none             &kp LSHFT         &none             &none    &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &none  &none
+&none  &none             &none             &none             &none             &none    &none      &none      &none      &none      &none  &none
+                                           &none             &none             &none    &none      &none      &none
             >;
         };
     };
