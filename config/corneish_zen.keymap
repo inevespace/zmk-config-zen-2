@@ -28,11 +28,6 @@
             key-positions = <24 35>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-        };
-
         toplover {
             bindings = <&tog 2>;
             key-positions = <25 34>;
@@ -60,6 +55,8 @@
 
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
         };
     };
 
@@ -86,10 +83,10 @@
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE     &kp Q            &kp W    &kp F         &kp P          &kp B          &kp J        &kp L  &kp U        &kp Y    &kp SQT   &kp DEL
-&kp BACKSPACE  &tph LEFT_ALT A  &lt 7 R  &tph LSHFT S  &tph LCTRL T   &kp G          &kp M        &kp N  &kp E        &kp I    &kp O     &kp ENTER
-&none          &kp Z            &kp X    &kp C         &kp D          &kp V          &kp K        &kp H  &kp COMMA    &kp DOT  &kp FSLH  &kp COLON
-                                         &kp LGUI      &mt LSHFT TAB  &lt 3 SPACE    &lt 4 SPACE  &mo 5  &key_repeat
+&kp ESCAPE     &kp Q            &kp W    &kp F         &kp P          &kp B          &kp J        &kp L         &kp U         &kp Y             &kp SQT          &kp DEL
+&kp BACKSPACE  &tph LEFT_ALT A  &lt 7 R  &tph LSHFT S  &tph LCTRL T   &kp G          &kp M        &tph LCTRL N  &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&none          &kp Z            &kp X    &kp C         &kp D          &kp V          &kp K        &kp H         &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                         &kp LGUI      &mt LSHFT TAB  &lt 3 SPACE    &lt 4 SPACE  &mo 5         &key_repeat
             >;
         };
 
@@ -113,10 +110,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &none        &kp N7        &kp N8        &kp N9        &kp EQUAL    &kp N6  &kp N7  &kp N8     &kp N9           &kp N0           &rgb_ug RGB_TOG
-&bt BT_CLR  &none        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &sk LSHFT    &none   &none   &kp LSHFT  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
-&sys_reset  &bootloader  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0       &none   &none   &none      &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
-                                       &trans        &none         &trans       &none   &none   &none
+&kp TILDE   &none        &kp N7        &kp N8        &kp N9        &kp EQUAL    &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE   &kp RIGHT_BRACE
+&bt BT_CLR  &none        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &sk LSHFT    &kp PLUS  &kp MINUS       &kp LSHFT             &trans                 &kp SEMICOLON    &kp SQT
+&sys_reset  &bootloader  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0       &none     &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
+                                       &trans        &none         &trans       &none     &none           &none
             >;
         };
 
@@ -130,10 +127,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &kp BACKSLASH
-&trans   &none     &none   &none     &none     &none        &kp PLUS   &kp MINUS  &kp LBKT         &kp RBKT  &kp SEMICOLON  &kp GRAVE
-&trans   &none     &none   &none     &none     &none        &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE       &kp TILDE
-                           &kp LGUI  &trans    &kp SPACE    &none      &trans     &kp RALT
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &kp BACKSLASH
+&kp F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp PLUS   &kp MINUS       &kp LBKT         &kp RBKT  &kp SEMICOLON  &kp GRAVE
+&kp F7     &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp UNDER  &kp UNDERSCORE  &kp LBRC         &kp RBRC  &kp PIPE       &kp TILDE
+                             &kp LGUI  &trans    &kp SPACE    &none      &trans          &kp RALT
             >;
         };
 
