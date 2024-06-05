@@ -44,6 +44,11 @@
             key-positions = <8 20>;
             layers = <1>;
         };
+
+        auxfunc {
+            bindings = <&tog 6>;
+            key-positions = <5 17 29>;
+        };
     };
 
     behaviors {
@@ -110,10 +115,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE   &kp EXCLAMATION  &tph AMPERSAND N7          &tph ASTERISK N8       &kp N9               &kp EQUAL    &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none            &kp NON_US_BACKSLASH
-&bt BT_CLR  &none            &tph DOLLAR NUMBER_4       &tph PERCENT N5        &tph CARET NUMBER_6  &none        &kp PLUS  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON    &kp SQT
-&sys_reset  &bootloader      &tph EXCLAMATION NUMBER_1  &tph AT_SIGN NUMBER_2  &tph HASH NUMBER_3   &kp N0       &none     &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
-                                                        &trans                 &none                &trans       &none     &none           &none
+&kp TILDE  &kp EXCLAMATION  &tph AMPERSAND N7          &tph ASTERISK N8       &kp N9               &kp EQUAL    &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &kp NON_US_BACKSLASH
+&none      &none            &tph DOLLAR NUMBER_4       &tph PERCENT N5        &tph CARET NUMBER_6  &none        &kp PLUS  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SQT
+&none      &none            &tph EXCLAMATION NUMBER_1  &tph AT_SIGN NUMBER_2  &tph HASH NUMBER_3   &kp N0       &none     &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none
+                                                       &trans                 &none                &trans       &none     &none           &none
             >;
         };
 
@@ -147,10 +152,10 @@
 
         aux {
             bindings = <
-&none       &none        &none      &none  &none  &none    &none  &none  &none  &none  &none  &none
-&bt BT_CLR  &bt BT_NXT   &none      &none  &none  &none    &none  &none  &none  &none  &none  &none
-&sys_reset  &bootloader  &soft_off  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                                    &none  &none  &none    &none  &none  &none
+&bt BT_NXT  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &none  &none    &none  &none  &none            &none            &none            &rgb_ug RGB_TOG
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none  &none    &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
+&sys_reset  &bootloader    &soft_off      &none          &none  &none    &none  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
+                                          &none          &none  &none    &none  &none  &none
             >;
         };
 
