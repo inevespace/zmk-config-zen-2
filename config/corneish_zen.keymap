@@ -4,14 +4,14 @@
 * SPDX-License-Identifier: MIT
 *
 */
+//#include <dt-bindings/zmk/keys.h>
 
-
+#include "keys_ru_phonetic.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-//#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include "keys_ru_phonetic.h"
 
 / {
     chosen {
@@ -31,7 +31,7 @@
         };
 
         toplover {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <25 34>;
         };
 
@@ -48,8 +48,13 @@
         };
 
         auxfunc {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <5 17 29>;
+        };
+
+        ru {
+            bindings = <&tog 2>;
+            key-positions = <11 23 35>;
         };
     };
 
@@ -83,7 +88,7 @@
 &kp ESCAPE     &kp Q  &kp W  &kp E     &kp R          &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
 &kp BACKSPACE  &kp A  &kp S  &kp D     &kp F          &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LCTRL      &kp Z  &kp X  &kp C     &kp V          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mt LSHFT TAB  &lt 3 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
+                             &kp LGUI  &mt LSHFT TAB  &lt 4 SPACE    &lt 5 SPACE  &mo 6  &kp RALT
             >;
         };
 
@@ -91,9 +96,19 @@
             display-name = "colemak";
             bindings = <
 &kp ESCAPE       &tph EXCLAMATION Q  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
-&lt 8 BACKSPACE  &tph LEFT_ALT A     &lt 7 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&lt 9 BACKSPACE  &tph LEFT_ALT A     &lt 8 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
 &none            &kp Z               &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                                     &kp LGUI      &mt LSHFT TAB  &lt 3 SPACE       &lt 4 SPACE   &mo 5             &key_repeat
+                                                     &kp LGUI      &mt LSHFT TAB  &lt 4 SPACE       &lt 5 SPACE   &mo 6             &key_repeat
+            >;
+        };
+
+        ru {
+            display-name = "rus";
+            bindings = <
+&kp ESCAPE     &kp Q  &kp W  &kp E     &kp R                &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
+&kp BACKSPACE  &kp A  &kp S  &kp D     &kp F                &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LCTRL      &kp Z  &kp X  &kp C     &kp RU_CYRILLIC_ZHE  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+                             &kp LGUI  &mt LSHFT TAB        &lt 4 SPACE    &lt 5 SPACE  &mo 6  &kp RALT
             >;
         };
 
