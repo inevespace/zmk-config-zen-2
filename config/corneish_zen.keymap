@@ -56,6 +56,12 @@
             bindings = <&tog 2>;
             key-positions = <11 23 35>;
         };
+
+        the {
+            bindings = <&the_macro>;
+            key-positions = <4 16>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -69,6 +75,15 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
+        };
+    };
+
+    macros {
+        the_macro: the_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
+            label = "THE_MACRO";
         };
     };
 
