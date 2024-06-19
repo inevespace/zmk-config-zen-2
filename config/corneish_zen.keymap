@@ -32,7 +32,7 @@
         };
 
         toplover {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <25 34>;
         };
 
@@ -49,12 +49,12 @@
         };
 
         auxfunc {
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
             key-positions = <5 17 29>;
         };
 
         ru {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <11 23 35>;
         };
 
@@ -104,17 +104,27 @@
 &kp ESCAPE     &kp Q  &kp W  &kp E     &kp R          &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
 &kp BACKSPACE  &kp A  &kp S  &kp D     &kp F          &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LCTRL      &kp Z  &kp X  &kp C     &kp V          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mt LSHFT TAB  &lt 4 SPACE    &lt 5 SPACE  &mo 6  &kp RALT
+                             &kp LGUI  &mt LSHFT TAB  &lt 5 SPACE    &lt 6 SPACE  &mo 7  &kp RALT
             >;
         };
 
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE       &tph EXCLAMATION Q  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
-&lt 9 BACKSPACE  &tph LEFT_ALT A     &lt 8 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
-&none            &kp Z               &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                                     &kp LGUI      &mt LSHFT TAB  &lt 4 SPACE       &lt 5 SPACE   &mo 6             &key_repeat
+&kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT A     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&tog 2            &kp Z               &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &key_repeat
+            >;
+        };
+
+        crst {
+            display-name = "crst";
+            bindings = <
+&kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp O             &kp Y            &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT C     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META A  &tph LEFT_ALT I  &kp ENTER
+&tog 2            &kp Z               &kp X           &kp K         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &key_repeat
             >;
         };
 
@@ -124,7 +134,7 @@
 &kp ESCAPE     &kp Q  &kp W  &kp E     &kp R                &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
 &kp BACKSPACE  &kp A  &kp S  &kp D     &kp F                &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LCTRL      &kp Z  &kp X  &kp C     &kp RU_CYRILLIC_ZHE  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mt LSHFT TAB        &lt 4 SPACE    &lt 5 SPACE  &mo 6  &kp RALT
+                             &kp LGUI  &mt LSHFT TAB        &lt 5 SPACE    &lt 6 SPACE  &mo 7  &kp RALT
             >;
         };
 
