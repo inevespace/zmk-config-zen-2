@@ -97,8 +97,29 @@
         ing_macro: ing_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G &kp SPACE>;
+            bindings = <&kp I &kp N &kp G>;
             label = "ING_MACRO";
+        };
+
+        ion_macro: ion_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+            label = "ION_MACRO";
+        };
+
+        rl_macro: rl_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp L>;
+            label = "RL_MACRO";
+        };
+
+        ed_macro: ed_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp D &kp SPACE>;
+            label = "ED_MACRO";
         };
     };
 
@@ -236,10 +257,10 @@
 
         type {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &you_macro  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &ing_macro    &trans  &trans  &the_macro  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans
-                        &trans  &trans  &trans        &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &trans     &trans        &trans  &trans      &you_macro  &trans  &trans  &trans
+&trans  &rl_macro  &trans  &trans  &trans     &ing_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
+&trans  &trans     &trans  &trans  &ed_macro  &trans        &trans  &trans      &trans      &trans  &trans  &trans
+                           &trans  &trans     &trans        &trans  &trans      &trans
             >;
         };
     };
