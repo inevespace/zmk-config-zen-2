@@ -149,7 +149,7 @@
 &kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
 &lt 10 BACKSPACE  &tph LEFT_ALT A     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
 &tog 2            &kp Z               &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &key_repeat
+                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
