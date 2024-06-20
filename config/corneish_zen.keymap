@@ -39,13 +39,13 @@
         j-combo {
             bindings = <&kp J>;
             key-positions = <7 19>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         k-combo {
             bindings = <&kp K>;
             key-positions = <8 20>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         auxfunc {
@@ -61,7 +61,7 @@
         the {
             bindings = <&the_macro>;
             key-positions = <4 16>;
-            layers = <1>;
+            layers = <1 2>;
         };
     };
 
@@ -85,6 +85,20 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E>;
             label = "THE_MACRO";
+        };
+
+        you_macro: you_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y &kp O &kp U &kp SPACE>;
+            label = "YOU_MACRO";
+        };
+
+        ing_macro: ing_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G &kp SPACE>;
+            label = "ING_MACRO";
         };
     };
 
@@ -121,10 +135,10 @@
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN L  &tph HASH W   &tph DOLLAR M  &tph PERCENT B    &tph CARET J  &tph AMPERSAND F  &kp U         &kp O             &kp Y            &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT C     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &kp K             &kp APOS      &tph LCTRL N      &tph LSHFT E  &tph LEFT_META A  &tph LEFT_ALT I  &kp ENTER
-&tog 2            &kp Z               &kp X           &kp G         &kp D          &kp V             &kp P         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &key_repeat
+&kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN L  &tph HASH W   &tph DOLLAR M  &tph PERCENT B    &tph CARET J  &tph AMPERSAND F  &kp U         &kp Y             &kp APOS         &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT A     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp P         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&tog 2            &kp Z               &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
@@ -217,6 +231,15 @@
 &none  &none  &none  &none  &none  &none    &none           &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &none
 &none  &none  &none  &none  &none  &none    &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none
                      &none  &none  &none    &none           &kp KP_NUMBER_0  &kp DOT
+            >;
+        };
+
+        type {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &you_macro  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &ing_macro    &trans  &trans  &the_macro  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans
+                        &trans  &trans  &trans        &trans  &trans  &trans
             >;
         };
     };
