@@ -77,6 +77,11 @@
             key-positions = <1 2>;
             layers = <1>;
         };
+
+        ing {
+            bindings = <&lk_ing 0 0>;
+            key-positions = <17 16>;
+        };
     };
 
     behaviors {
@@ -102,6 +107,18 @@
             tapping-term-ms = <100>;
             require-prior-idle-ms = <100>;
             quick-tap-ms = <100>;
+        };
+
+        lk_ing: lk_ing {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_ING";
+            bindings = <&ting_macro>, <&ing_macro>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <130>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <120>;
         };
     };
 
