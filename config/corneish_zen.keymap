@@ -121,7 +121,7 @@
             quick-tap-ms = <120>;
         };
 
-        lk_ging: lk_ging {
+        lk_Ging: lk_Ging {
             compatible = "zmk,behavior-hold-tap";
             label = "LK_GING";
             bindings = <&ing_macro>, <&kp>;
@@ -180,7 +180,7 @@
         ting_macro: ting_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp N &kp G>;
+            bindings = <&kp T &kp I &kp N &kp G &kp SPACE>;
             label = "TING_MACRO";
         };
 
@@ -248,7 +248,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             display-name = "colemak";
             bindings = <
 &kp ESCAPE        &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_ging 0 G      &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&lt 10 BACKSPACE  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_Ging 0 G      &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
 &tog 2            &kp Z            &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
                                                    &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
@@ -358,10 +358,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         type {
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &trans        &trans  &trans      &you_macro  &trans  &trans  &trans
-&trans  &trans  &rl_macro  &trans  &trans     &ing_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &ed_macro  &trans        &trans  &trans      &trans      &trans  &trans  &trans
-                           &trans  &trans     &trans        &trans  &trans      &trans
+&trans  &trans  &trans     &trans  &trans     &trans         &trans  &trans      &you_macro  &trans  &trans  &trans
+&trans  &trans  &rl_macro  &trans  &trans     &ting_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &ed_macro  &trans         &trans  &trans      &trans      &trans  &trans  &trans
+                           &trans  &trans     &trans         &trans  &trans      &trans
             >;
         };
     };
