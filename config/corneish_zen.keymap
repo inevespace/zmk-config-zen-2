@@ -120,6 +120,18 @@
             require-prior-idle-ms = <100>;
             quick-tap-ms = <120>;
         };
+
+        lk_ging: lk_ging {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_GING";
+            bindings = <&ing_macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <130>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <120>;
+        };
     };
 
     macros {
@@ -235,10 +247,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE  &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P        &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
-&lt 10 TAB  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T         &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
-&tog 2      &kp Z            &kp X           &kp C         &kp D                &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                             &kp LGUI      &mt LSHFT BACKSPACE  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
+&kp ESCAPE        &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_ging 0 G      &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&tog 2            &kp Z            &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                                   &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
