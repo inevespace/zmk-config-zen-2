@@ -63,6 +63,18 @@
             key-positions = <4 16>;
             layers = <1 2>;
         };
+
+        the1 {
+            bindings = <&the_macro>;
+            key-positions = <16 15>;
+            layers = <1 2>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCL>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
     };
 
     behaviors {
@@ -76,6 +88,18 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
             require-prior-idle-ms = <125>;
+        };
+
+        lk_qu: lk_qu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_QU";
+            bindings = <&kp>, <&qu_macro>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <100>;
         };
     };
 
@@ -97,7 +121,7 @@
         ing_macro: ing_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G>;
+            bindings = <&kp I &kp N &kp G &kp SPACE>;
             label = "ING_MACRO";
         };
 
@@ -120,6 +144,20 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp D &kp SPACE>;
             label = "ED_MACRO";
+        };
+
+        ting_macro: ting_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp I &kp N &kp G>;
+            label = "TING_MACRO";
+        };
+
+        qu_macro: qu_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "QU_MACRO";
         };
     };
 
@@ -146,10 +184,10 @@
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT A     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
-&tog 2            &kp Z               &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
-                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
+&kp ESCAPE        &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P        &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T         &kp G             &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
+&tog 2            &kp Z            &kp X           &kp C         &kp D                &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
+                                                   &kp LGUI      &mt LSHFT BACKSPACE  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
@@ -257,9 +295,9 @@
 
         type {
             bindings = <
-&trans  &trans     &trans  &trans  &trans     &trans        &trans  &trans      &you_macro  &trans  &trans  &trans
-&trans  &rl_macro  &trans  &trans  &trans     &ing_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
-&trans  &trans     &trans  &trans  &ed_macro  &trans        &trans  &trans      &trans      &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans        &trans  &trans      &you_macro  &trans  &trans  &trans
+&trans  &trans  &rl_macro  &trans  &trans     &ing_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &ed_macro  &trans        &trans  &trans      &trans      &trans  &trans  &trans
                            &trans  &trans     &trans        &trans  &trans      &trans
             >;
         };
