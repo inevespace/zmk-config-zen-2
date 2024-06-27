@@ -331,9 +331,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN L  &tph HASH S  &tph DOLLAR P     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U  &kp Y    &kp SLASH   &kp DEL
-&lt 10 BACKSPACE  &kp R               &kp N           &kp C        &kp T             &lk_Ging 0 G      &kp MINUS     &kp O             &kp E        &kp I    &kp H       &kp ENTER
-&tog 2            &kp W               &none           &none        &kp D             &tph V W          &kp A         &kp COLON         &kp COMMA    &kp DOT  &lk_qu 0 K  &kp COLON
+&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN L  &tph HASH C  &tph DOLLAR P     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U  &kp Y    &kp SLASH   &kp DEL
+&lt 10 BACKSPACE  &kp R               &kp N           &kp S        &kp T             &lk_Ging 0 G      &kp MINUS     &kp O             &kp E        &kp I    &kp H       &kp ENTER
+&tog 2            &kp W               &none           &kp C        &kp D             &tph V W          &kp A         &kp COLON         &kp COMMA    &kp DOT  &lk_qu 0 K  &kp COLON
                                                       &lt 9 LG(X)  &mt LEFT_GUI TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
