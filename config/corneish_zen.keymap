@@ -41,13 +41,13 @@
         j-combo {
             bindings = <&kp J>;
             key-positions = <7 19>;
-            layers = <1 2>;
+            layers = <1>;
         };
 
         k-combo {
             bindings = <&kp K>;
             key-positions = <8 20>;
-            layers = <1 2>;
+            layers = <1>;
         };
 
         auxfunc {
@@ -69,7 +69,7 @@
         the1 {
             bindings = <&the_macro>;
             key-positions = <16 15>;
-            layers = <1 2>;
+            layers = <1>;
         };
 
         exclamation {
@@ -81,6 +81,13 @@
         ing {
             bindings = <&lk_ing 0 0>;
             key-positions = <17 16>;
+        };
+
+        he-combo {
+            bindings = <&he_macro>;
+            key-positions = <20 8>;
+            layers = <2>;
+            require-prior-idle-ms = <0>;
         };
     };
 
@@ -190,6 +197,13 @@
             bindings = <&kp Q &kp U>;
             label = "QU_MACRO";
         };
+
+        he_macro: he_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp E>;
+            label = "HE_MACRO";
+        };
     };
 
     /*  Base (alpha) Layer  Hands Down Vibranium-Vb
@@ -257,10 +271,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION Q  &tph AT_SIGN G  &tph HASH M   &tph DOLLAR P  &tph PERCENT V    &tph CARET Z  &tph AMPERSAND O  &kp U         &kp Y             &kp APOS         &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT C     &lt 9 S         &tph LSHFT N  &tph LCTRL T   &kp K             &kp P         &tph LCTRL A      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
-&tog 2            &kp X               &kp F           &kp L         &kp D          &kp W             &kp K         &kp O             &kp COMMA     &kp DOT           &kp B            &kp COLON
-                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 R           &lt 6 SPACE   &mo 7             &sl 11
+&kp ESCAPE        &tph EXCLAMATION L  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET Z  &tph AMPERSAND O  &kp U         &kp Y             &kp FSLH         &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT N     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_Ging 0 G      &kp COMMA     &tph LCTRL A      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
+&tog 2            &kp M               &kp X           &kp C         &kp D          &kp V             &kp DOT       &kp O             &kp H         &kp DOT           &lk_qu K 0       &kp COLON
+                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
