@@ -40,13 +40,13 @@
 
         j-combo {
             bindings = <&kp J>;
-            key-positions = <7 19>;
+            key-positions = <19 7>;
             layers = <1 2>;
         };
 
         k-combo {
             bindings = <&kp K>;
-            key-positions = <8 20>;
+            key-positions = <20 8>;
             layers = <1>;
         };
 
@@ -83,22 +83,15 @@
             key-positions = <17 16>;
         };
 
-        he-combo {
-            bindings = <&he_macro>;
-            key-positions = <20 8>;
-            layers = <2>;
-            require-prior-idle-ms = <0>;
-        };
-
         are-combo {
             bindings = <&are_macro>;
-            key-positions = <1 13>;
-            layers = <2>;
+            key-positions = <13 25>;
+            layers = <2 1>;
         };
 
         lnm-combo {
             bindings = <&kp M>;
-            key-positions = <14 2>;
+            key-positions = <14 26>;
             layers = <2>;
         };
 
