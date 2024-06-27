@@ -38,16 +38,10 @@
             key-positions = <25 34>;
         };
 
-        j-combo {
-            bindings = <&kp J>;
-            key-positions = <19 7>;
-            layers = <1 2>;
-        };
-
-        k-combo {
-            bindings = <&kp K>;
+        rsft-combo {
+            bindings = <&tph RIGHT_SHIFT K>;
             key-positions = <20 8>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         auxfunc {
@@ -61,8 +55,8 @@
         };
 
         tdp-combo {
-            bindings = <&kp P>;
-            key-positions = <16 28>;
+            bindings = <&tph LCTRL P>;
+            key-positions = <16 4>;
             layers = <2 1>;
         };
 
@@ -72,32 +66,38 @@
             layers = <1>;
         };
 
-        exclamation {
-            bindings = <&kp EXCL>;
-            key-positions = <1 2>;
-            layers = <1>;
-        };
-
         ing {
             bindings = <&lk_ing 0 0>;
             key-positions = <17 16>;
         };
 
-        are-combo {
-            bindings = <&are_macro>;
-            key-positions = <13 25>;
-            layers = <2 1>;
-        };
-
         lnm-combo {
-            bindings = <&kp M>;
-            key-positions = <14 26>;
+            bindings = <&tph LEFT_WIN L>;
+            key-positions = <14 2>;
             layers = <2>;
         };
 
         scf-combo {
-            bindings = <&kp F>;
-            key-positions = <15 27>;
+            bindings = <&tph LSHFT F>;
+            key-positions = <15 3>;
+            layers = <2 1>;
+        };
+
+        rctrl {
+            bindings = <&tph RCTRL J>;
+            key-positions = <7 19>;
+            layers = <2 1>;
+        };
+
+        lalt-combo {
+            bindings = <&tph LEFT_ALT X>;
+            key-positions = <1 13>;
+            layers = <2 1>;
+        };
+
+        rwin-combo {
+            bindings = <&tph RIGHT_WIN DOT>;
+            key-positions = <21 9>;
             layers = <2 1>;
         };
     };
@@ -118,7 +118,7 @@
         lk_qu: lk_qu {
             compatible = "zmk,behavior-hold-tap";
             label = "LK_QU";
-            bindings = <&kp>, <&qu_macro>;
+            bindings = <&qu_macro>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -315,7 +315,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE        &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &lk_you 0 U   &kp Y             &kp SQT          &kp DEL
+&kp ESCAPE        &lk_qu Q Q       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &lk_you 0 U   &kp Y             &kp SQT          &kp DEL
 &lt 10 BACKSPACE  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_Ging 0 G      &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
 &tog 2            &kp Z            &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
                                                    &kp LGUI      &mt LSHFT TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
@@ -325,10 +325,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN L  &tph HASH C   &tph DOLLAR D     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U   &kp Y             &lk_qu K 0       &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT R     &lt 9 N         &tph LSHFT S  &tph LCTRL T      &lk_Ging 0 G      &kp COMMA     &tph LCTRL O      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
-&tog 2            &kp X               &kp M           &kp C         &kp D             &kp V             &kp DOT       &kp A             &kp H         &kp DOT           &kp FSLH         &kp COLON
-                                                      &kp LGUI      &mt LEFT_GUI TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
+&kp ESCAPE        &tph EXCLAMATION R  &tph AT_SIGN N  &tph HASH S  &tph DOLLAR T     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U  &kp Y    &lk_qu K K  &kp DEL
+&lt 10 BACKSPACE  &kp W               &kp M           &kp C        &kp D             &lk_Ging 0 G      &kp MINUS     &kp O             &kp E        &kp I    &kp H       &kp ENTER
+&tog 2            &kp X               &kp M           &kp C        &kp D             &kp V             &kp DOT       &kp A             &kp H        &kp DOT  &kp FSLH    &kp COLON
+                                                      &kp LGUI     &mt LEFT_GUI TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
