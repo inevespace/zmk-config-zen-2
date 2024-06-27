@@ -89,6 +89,12 @@
             layers = <2>;
             require-prior-idle-ms = <0>;
         };
+
+        are-combo {
+            bindings = <&are_macro>;
+            key-positions = <1 13>;
+            layers = <2>;
+        };
     };
 
     behaviors {
@@ -138,6 +144,42 @@
             tapping-term-ms = <130>;
             require-prior-idle-ms = <100>;
             quick-tap-ms = <120>;
+        };
+
+        lk_kqu: lk_kqu {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_KQU";
+            bindings = <&qu_macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <100>;
+        };
+
+        lk_you: lk_you {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_YOU";
+            bindings = <&you_macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <100>;
+        };
+
+        lk_are: lk_are {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_ARE";
+            bindings = <&are_macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <100>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <100>;
         };
     };
 
@@ -204,6 +246,13 @@
             bindings = <&kp H &kp E>;
             label = "HE_MACRO";
         };
+
+        are_macro: are_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp R &kp E &kp SPACE>;
+            label = "ARE_MACRO";
+        };
     };
 
     /*  Base (alpha) Layer  Hands Down Vibranium-Vb
@@ -261,7 +310,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         col {
             display-name = "colemak";
             bindings = <
-&kp ESCAPE        &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &kp U         &kp Y             &kp SQT          &kp DEL
+&kp ESCAPE        &lk_qu Q 0       &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET J  &tph AMPERSAND L  &lk_you 0 U   &kp Y             &kp SQT          &kp DEL
 &lt 10 BACKSPACE  &tph LEFT_ALT A  &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_Ging 0 G      &kp M         &tph LCTRL N      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT O  &kp ENTER
 &tog 2            &kp Z            &kp X           &kp C         &kp D          &kp V             &kp K         &kp H             &kp COMMA     &kp DOT           &kp FSLH         &kp COLON
                                                    &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
@@ -271,9 +320,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION L  &tph AT_SIGN W  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET Z  &tph AMPERSAND O  &kp U         &kp Y             &kp FSLH         &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT N     &lt 9 R         &tph LSHFT S  &tph LCTRL T   &lk_Ging 0 G      &kp COMMA     &tph LCTRL A      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
-&tog 2            &kp M               &kp X           &kp C         &kp D          &kp V             &kp DOT       &kp O             &kp H         &kp DOT           &lk_qu K 0       &kp COLON
+&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN L  &tph HASH F   &tph DOLLAR P  &tph PERCENT B    &tph CARET Z  &tph AMPERSAND O  &lk_you 0 U   &kp Y             &kp FSLH         &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT R     &lt 9 N         &tph LSHFT S  &tph LCTRL T   &lk_Ging 0 G      &kp COMMA     &tph LCTRL A      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
+&tog 2            &kp X               &kp M           &kp C         &kp D          &kp V             &kp DOT       &kp O             &kp H         &kp DOT           &lk_kqu 0 K      &kp COLON
                                                       &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
