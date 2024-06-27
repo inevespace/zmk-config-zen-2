@@ -41,7 +41,7 @@
         j-combo {
             bindings = <&kp J>;
             key-positions = <7 19>;
-            layers = <1>;
+            layers = <1 2>;
         };
 
         k-combo {
@@ -60,10 +60,10 @@
             key-positions = <11 23 35>;
         };
 
-        the {
-            bindings = <&the_macro>;
+        tdp-combo {
+            bindings = <&kp P>;
             key-positions = <4 16>;
-            layers = <1 2>;
+            layers = <2>;
         };
 
         the1 {
@@ -93,6 +93,18 @@
         are-combo {
             bindings = <&are_macro>;
             key-positions = <1 13>;
+            layers = <2>;
+        };
+
+        lnm-combo {
+            bindings = <&kp M>;
+            key-positions = <2 14>;
+            layers = <2>;
+        };
+
+        scf-combo {
+            bindings = <&kp F>;
+            key-positions = <3 15>;
             layers = <2>;
         };
     };
@@ -320,10 +332,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN F  &tph HASH L   &tph DOLLAR P  &tph PERCENT B    &tph CARET Z  &tph AMPERSAND O  &lk_you 0 U   &kp Y             &kp FSLH         &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT R     &lt 9 S         &tph LSHFT N  &tph LCTRL T   &lk_Ging 0 G      &kp COMMA     &tph LCTRL A      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
-&tog 2            &kp X               &kp C           &kp M         &kp D          &kp V             &kp DOT       &kp O             &kp H         &kp DOT           &lk_kqu 0 K      &kp COLON
-                                                      &kp LGUI      &mt LSHFT TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
+&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN N  &tph HASH S   &tph DOLLAR T     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U   &kp Y             &lk_qu K 0       &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT R     &lt 9 L         &tph LSHFT C  &tph LCTRL D      &lk_Ging 0 G      &kp COMMA     &tph LCTRL O      &tph LSHFT E  &tph LEFT_META I  &tph LEFT_ALT H  &kp ENTER
+&tog 2            &kp X               &kp M           &kp C         &kp D             &kp V             &kp DOT       &kp A             &kp H         &kp DOT           &kp FSLH         &kp COLON
+                                                      &kp LGUI      &mt LEFT_GUI TAB  &lt 5 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
@@ -374,9 +386,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &kp BACKSLASH
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp PLUS   &kp MINUS       &kp LBKT         &kp RBKT  &kp SEMICOLON  &kp GRAVE
-&kp F7     &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp UNDER  &kp UNDERSCORE  &kp LBRC         &kp RBRC  &kp PIPE       &kp TILDE
+&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp LPAR  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp BACKSLASH
+&kp F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp PLUS   &kp MINUS       &kp LBKT  &kp RBKT               &kp SEMICOLON         &kp GRAVE
+&kp F7     &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp ASTRK  &kp UNDERSCORE  &kp LBRC  &kp RBRC               &kp PIPE              &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &none      &trans          &kp RALT
             >;
         };
@@ -421,10 +433,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         type {
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &trans         &trans  &trans      &you_macro  &trans  &trans  &trans
-&trans  &trans  &rl_macro  &trans  &trans     &ting_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &ed_macro  &trans         &trans  &trans      &trans      &trans  &trans  &trans
-                           &trans  &trans     &trans         &trans  &trans      &trans
+&trans  &trans      &trans     &trans  &trans     &trans         &trans  &trans      &you_macro  &trans  &trans  &trans
+&trans  &are_macro  &rl_macro  &trans  &trans     &ting_macro    &trans  &ion_macro  &the_macro  &trans  &trans  &trans
+&trans  &trans      &trans     &trans  &ed_macro  &trans         &trans  &trans      &trans      &trans  &trans  &trans
+                               &trans  &trans     &trans         &trans  &trans      &trans
             >;
         };
     };
