@@ -54,7 +54,7 @@
             key-positions = <11 23 35>;
         };
 
-        tdp-combo {
+        lctrl-combo {
             bindings = <&tph LCTRL P>;
             key-positions = <16 4>;
             layers = <2 1>;
@@ -71,14 +71,14 @@
             key-positions = <17 16>;
         };
 
-        lnm-combo {
-            bindings = <&tph LEFT_WIN L>;
+        lwin-combo {
+            bindings = <&tph LEFT_WIN F>;
             key-positions = <14 2>;
             layers = <2>;
         };
 
-        scf-combo {
-            bindings = <&tph LSHFT F>;
+        lsft-combo {
+            bindings = <&tph LSHFT L>;
             key-positions = <15 3>;
             layers = <2 1>;
         };
@@ -91,7 +91,7 @@
 
         lalt-combo {
             bindings = <&tph LEFT_ALT X>;
-            key-positions = <1 13>;
+            key-positions = <13 1>;
             layers = <2 1>;
         };
 
@@ -99,6 +99,12 @@
             bindings = <&tph RIGHT_WIN DOT>;
             key-positions = <21 9>;
             layers = <2 1>;
+        };
+
+        ralt-combo {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <22 34>;
+            layers = <2>;
         };
     };
 
@@ -325,10 +331,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN C  &tph HASH M  &tph DOLLAR D     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U  &kp Y    &lk_qu K K  &kp DEL
+&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN C  &tph HASH M  &tph DOLLAR D     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U  &kp Y    &kp SLASH   &kp DEL
 &lt 10 BACKSPACE  &kp R               &kp S           &kp N        &kp T             &lk_Ging 0 G      &kp MINUS     &kp O             &kp E        &kp I    &kp H       &kp ENTER
-&tog 2            &none               &none           &none        &kp D             &kp V             &kp DOT       &kp A             &kp H        &kp DOT  &kp FSLH    &kp COLON
-                                                      &kp LGUI     &mt LEFT_GUI TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
+&tog 2            &kp W               &none           &none        &kp D             &kp V             &kp DOT       &kp A             &kp H        &kp DOT  &lk_qu 0 K  &kp COLON
+                                                      &lt 9 LG(X)  &mt LEFT_GUI TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
             >;
         };
 
