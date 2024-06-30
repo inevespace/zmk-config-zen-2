@@ -56,7 +56,7 @@
 
         lctrl-combo {
             bindings = <&tph LCTRL P>;
-            key-positions = <16 28>;
+            key-positions = <16 4>;
             layers = <2 1>;
         };
 
@@ -331,10 +331,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph EXCLAMATION W  &tph AT_SIGN L  &tph HASH C  &tph DOLLAR P     &tph PERCENT B    &tph CARET Z  &tph AMPERSAND A  &lk_you 0 U  &kp Y    &kp SLASH   &kp DEL
-&lt 10 BACKSPACE  &kp R               &kp N           &kp S        &kp T             &lk_Ging 0 G      &kp MINUS     &kp O             &kp E        &kp I    &kp H       &kp ENTER
-&tog 2            &kp W               &none           &kp C        &kp D             &tph V W          &kp A         &kp COLON         &kp COMMA    &kp DOT  &lk_qu 0 K  &kp COLON
-                                                      &lt 9 LG(X)  &mt LEFT_GUI TAB  &lt 6 SPACE       &lt 6 SPACE   &mo 7             &sl 11
+&kp ESCAPE        &tph N1 Q        &tph NUMBER_2 L  &tph NUMBER_3 C    &tph NUMBER_4 P   &tph NUMBER_5 B    &tph N6 Z    &tph N7 A     &tph N8 U           &kp N9           &tph NUMBER_0 SLASH  &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT R  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T      &lk_Ging 0 G       &kp MINUS    &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H      &kp ENTER
+&tog 2            &kp W            &none            &kp C              &kp D             &kp V              &kp A        &kp COLON     &kp COMMA           &kp DOT          &lk_qu 0 K           &kp COLON
+                                                    &lt 9 LG(X)        &mt LEFT_GUI TAB  &lt 6 SPACE        &lt 6 SPACE  &mo 7         &sl 11
             >;
         };
 
