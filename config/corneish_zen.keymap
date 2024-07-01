@@ -47,6 +47,7 @@
         auxfunc {
             bindings = <&tog 8>;
             key-positions = <5 17 29>;
+            layers = <2 0 1>;
         };
 
         ru {
