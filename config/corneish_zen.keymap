@@ -39,7 +39,7 @@
         };
 
         rsft-combo {
-            bindings = <&tph RIGHT_SHIFT K>;
+            bindings = <&kp K>;
             key-positions = <20 8>;
             layers = <1 2>;
         };
@@ -66,43 +66,38 @@
             layers = <1>;
         };
 
-        ing {
-            bindings = <&lk_ing 0 0>;
-            key-positions = <17 16>;
-        };
-
         lwin-combo {
-            bindings = <&tph LEFT_WIN W>;
+            bindings = <&kp V>;
             key-positions = <14 2>;
             layers = <2>;
         };
 
         lsft-combo {
-            bindings = <&tph LSHFT G>;
+            bindings = <&lk_Ging 0 G>;
             key-positions = <15 3>;
             layers = <2 1>;
         };
 
         rctrl {
-            bindings = <&tph RCTRL J>;
+            bindings = <&kp J>;
             key-positions = <7 19>;
             layers = <2 1>;
         };
 
         lalt-combo {
-            bindings = <&tph LEFT_ALT X>;
+            bindings = <&none>;
             key-positions = <13 25>;
             layers = <2 1>;
         };
 
         rwin-combo {
-            bindings = <&tph RIGHT_WIN DOT>;
+            bindings = <&kp DOT>;
             key-positions = <21 9>;
             layers = <2 1>;
         };
 
         ralt-combo {
-            bindings = <&kp LEFT_ALT>;
+            bindings = <&none>;
             key-positions = <22 34>;
             layers = <2>;
         };
@@ -331,9 +326,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE        &tph N1 Q        &tph NUMBER_2 L  &tph NUMBER_3 F    &tph NUMBER_4 P   &tph NUMBER_5 B    &tph N6 SINGLE_QUOTE  &tph N7 A     &tph N8 U           &tph N9 Y        &tph NUMBER_0 K  &kp DEL
-&lt 10 BACKSPACE  &tph LEFT_ALT N  &tph LEFT_WIN R  &tph LEFT_SHIFT S  &tph LCTRL T      &lk_Ging 0 G       &kp MINUS             &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
-&tog 2            &tph Z M         &kp X            &kp C              &kp D             &kp V              &kp A                 &kp COLON     &kp COMMA           &kp DOT          &tph SLASH K     &kp COLON
+&kp ESCAPE        &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P   &tph NUMBER_5 B    &tph N6 SINGLE_QUOTE  &tph N7 A     &tph N8 U           &tph N9 Y        &tph NUMBER_0 K  &kp DEL
+&lt 10 BACKSPACE  &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T      &lk_Ging 0 G       &kp MINUS             &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
+&tog 2            &tph Z M         &tph X M         &kp C              &kp D             &kp R              &kp A                 &tph SEMI A   &kp COMMA           &kp DOT          &tph SLASH K     &kp COLON
                                                     &lt 9 LG(X)        &mt LEFT_GUI TAB  &lt 6 SPACE        &lt 6 SPACE           &mo 7         &sl 11
             >;
         };
@@ -385,10 +380,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS        &kp LPAR  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp BACKSLASH
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6       &kp PLUS   &kp MINUS       &kp LBKT  &kp RBKT               &kp SEMICOLON         &kp GRAVE
-&kp F7     &kp F8    &kp F9  &kp F10   &kp F11   &kp F12      &kp ASTRK  &kp UNDERSCORE  &kp LBRC  &kp RBRC               &kp PIPE              &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE    &none      &trans          &kp RALT
+&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp CARET  &kp AMPS        &kp LPAR  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp BACKSLASH
+&kp F1     &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &kp PLUS   &kp MINUS       &kp LBKT  &kp RBKT               &kp SEMICOLON         &kp GRAVE
+&kp F7     &kp F8            &kp F9            &kp F10           &kp F11           &kp F12             &kp ASTRK  &kp UNDERSCORE  &kp LBRC  &kp RBRC               &kp PIPE              &kp TILDE
+                                               &kp LGUI          &trans            &kp SPACE           &none      &trans          &kp RALT
             >;
         };
 
