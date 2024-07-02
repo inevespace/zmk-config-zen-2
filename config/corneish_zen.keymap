@@ -109,8 +109,8 @@
             layers = <2>;
         };
 
-        cleft {
-            bindings = <&kp LC(LEFT)>;
+        pgup {
+            bindings = <&kp PG_UP>;
             key-positions = <20 8 19>;
             layers = <2>;
         };
@@ -347,7 +347,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             bindings = <
 &kp ESCAPE        &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P   &tph NUMBER_5 B    &tph N6 SINGLE_QUOTE  &tph N7 J     &tph N8 U           &tph N9 Y        &tph NUMBER_0 K  &kp DEL
 &lt 10 BACKSPACE  &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T      &lk_Ging 0 G       &kp MINUS             &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
-&tog 2            &tph Z M         &tph X M         &kp C              &kp D             &kp R              &kp A                 &tph SEMI A   &kp COMMA           &kp DOT          &tph SLASH K     &kp COLON
+&tog 2            &tph Z M         &tph X M         &kp C              &kp D             &kp R              &kp A                 &tph SEMI A   &kp COMMA           &kp DOT          &tph SLASH K     &kp LANG1
                                                     &lt 9 LG(X)        &mt LEFT_GUI TAB  &lt 6 SPACE        &lt 6 SPACE           &mo 7         &sl 11
             >;
         };
