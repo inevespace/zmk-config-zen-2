@@ -45,7 +45,7 @@
         };
 
         auxfunc {
-            bindings = <&tog 7>;
+            bindings = <&sl 7>;
             key-positions = <5 17 29>;
         };
 
@@ -116,6 +116,12 @@
         pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <20 8 21>;
+            layers = <1>;
+        };
+
+        copypaste {
+            bindings = <&tph K_PASTE K_COPY>;
+            key-positions = <25 26>;
             layers = <1>;
         };
     };
