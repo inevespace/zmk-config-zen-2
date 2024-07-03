@@ -45,7 +45,7 @@
         };
 
         auxfunc {
-            bindings = <&sl 7>;
+            bindings = <&sl 6>;
             key-positions = <5 17 29>;
         };
 
@@ -123,6 +123,21 @@
             bindings = <&tph K_PASTE K_COPY>;
             key-positions = <25 26>;
             layers = <1>;
+        };
+
+        p1 {
+            bindings = <&kp LG(N1)>;
+            key-positions = <1 2>;
+        };
+
+        p2 {
+            bindings = <&kp LG(NUMBER_2)>;
+            key-positions = <2 3>;
+        };
+
+        p3 {
+            bindings = <&kp LG(NUMBER_3)>;
+            key-positions = <3 4>;
         };
     };
 
@@ -330,19 +345,19 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
             bindings = <
 &kp ESCAPE  &tph NUMBER_1 Q  &tph NUMBER_2 W  &tph NUMBER_3 E  &kp R          &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
-&lt 9 BSPC  &kp A            &kp S            &tph LSHFT D     &tph LCTRL F   &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&lt 8 BSPC  &kp A            &kp S            &tph LSHFT D     &tph LCTRL F   &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
 &none       &kp Z            &kp X            &kp C            &kp V          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                                              &kp LGUI         &mt LSHFT TAB  &lt 4 SPACE    &lt 5 SPACE  &mo 6  &kp RALT
+                                              &kp LGUI         &mt LSHFT TAB  &lt 4 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
             >;
         };
 
         crst {
             display-name = "crst";
             bindings = <
-&kp ESCAPE       &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P   &tph NUMBER_5 B    &tph N6 SINGLE_QUOTE  &tph N7 J     &tph N8 U           &tph N9 Y        &tph NUMBER_0 K  &kp DEL
-&lt 9 BACKSPACE  &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T      &lk_Ging 0 G       &kp MINUS             &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
-&kp LANG2        &tph Z M         &tph X M         &kp C              &kp D             &kp R              &kp A                 &tph SEMI A   &kp COMMA           &kp DOT          &tph SLASH K     &kp LANG1
-                                                   &lt 8 LG(X)        &mt LEFT_GUI TAB  &lt 5 SPACE        &lt 5 SPACE           &mo 6         &sl 10
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P  &tph NUMBER_5 B        &tph N6 SINGLE_QUOTE  &tph N7 J     &tph N8 U           &tph N9 Y        &tph NUMBER_0 K  &kp DEL
+&lt 8 BACKSPACE    &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T     &tph K_PASTE K_COPY    &kp MINUS             &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &tph Z M         &tph X M         &kp C              &kp D            &kp R                  &kp A                 &tph SEMI A   &kp COMMA           &kp DOT          &tph SLASH K     &kp LANG1
+                                                     &lt 7 LG(X)        &lt 7 TAB        &lt 4 SPACE            &lt 4 SPACE           &mo 5         &sl 9
             >;
         };
 
@@ -352,7 +367,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 &kp ESCAPE     &kp Q  &kp W  &kp E     &kp R                &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
 &kp BACKSPACE  &kp A  &kp S  &kp D     &kp F                &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
 &kp LCTRL      &kp Z  &kp X  &kp C     &kp RU_CYRILLIC_ZHE  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mt LSHFT TAB        &lt 4 SPACE    &lt 5 SPACE  &mo 6  &kp RALT
+                             &kp LGUI  &mt LSHFT TAB        &lt 4 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
             >;
         };
 
@@ -366,23 +381,6 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             >;
         };
 
-        num {
-            display-name = "NUMBER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
-&kp TILDE  &kp EXCLAMATION  &tph AMPERSAND N7          &tph ASTERISK N8       &kp N9               &kp EQUAL    &none     &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &kp NON_US_BACKSLASH
-&none      &none            &tph DOLLAR NUMBER_4       &tph PERCENT N5        &tph CARET NUMBER_6  &none        &kp PLUS  &kp MINUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SQT
-&none      &none            &tph EXCLAMATION NUMBER_1  &tph AT_SIGN NUMBER_2  &tph HASH NUMBER_3   &kp N0       &none     &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none
-                                                       &trans                 &none                &trans       &none     &none           &none
-            >;
-        };
-
         sym {
             display-name = "SYMBOL";
 
@@ -393,10 +391,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp CARET  &kp AMPS        &kp LPAR  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp BACKSLASH
-&kp F1     &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &kp PLUS   &kp MINUS       &kp LBKT  &kp RBKT               &kp SEMICOLON         &kp GRAVE
-&kp F7     &kp F8            &kp F9            &kp F10           &kp F11           &kp F12             &kp ASTRK  &kp UNDERSCORE  &kp LBRC  &kp RBRC               &kp PIPE              &kp TILDE
-                                               &kp LGUI          &trans            &kp SPACE           &none      &trans          &kp RALT
+&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp TILDE  &kp LPAR          &kp RPAR           &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp BACKSLASH
+&kp F1     &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp RBKT               &none                 &kp GRAVE
+&kp F7     &kp F8            &kp F9            &kp F10           &kp F11           &kp F12             &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RBRC               &kp PIPE              &kp TILDE
+                                               &kp LGUI          &trans            &kp SPACE           &none      &trans            &none
             >;
         };
 
@@ -422,17 +420,17 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         os {
             bindings = <
-&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &none      &none      &none      &none      &none  &none
-&none  &none             &none             &kp LSHFT         &none             &none         &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &none  &none
-&none  &none             &none             &none             &none             &none         &none      &none      &none      &none      &none  &none
-                                           &none             &none             &none         &none      &none      &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &none  &none      &kp LG(K)  &none      &none  &none
+&none  &none             &none             &kp LSHFT         &none             &none         &none  &kp LG(H)  &kp LG(J)  &kp LG(L)  &none  &none
+&none  &none             &none             &none             &none             &none         &none  &none      &none      &none      &none  &none
+                                           &none             &none             &none         &none  &none      &none
             >;
         };
 
         rnumpad {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &none
-&none  &none  &none  &none  &none  &none    &none           &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &none
+&none  &none  &none  &none  &none  &none    &none           &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans
 &none  &none  &none  &none  &none  &none    &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none
                      &none  &none  &none    &none           &kp KP_NUMBER_0  &kp DOT
             >;
