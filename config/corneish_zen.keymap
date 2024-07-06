@@ -72,7 +72,7 @@
         };
 
         lsft-combo {
-            bindings = <&lk_Ging 0 G>;
+            bindings = <&kp G>;
             key-positions = <15 3>;
             layers = <1>;
         };
@@ -97,25 +97,25 @@
 
         left {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <20 19>;
+            key-positions = <8 7>;
             layers = <1>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
             layers = <1>;
         };
 
         pgup {
             bindings = <&kp PG_UP>;
-            key-positions = <20 8 19>;
+            key-positions = <8 19>;
             layers = <1>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <20 8 21>;
+            key-positions = <8 21>;
             layers = <1>;
         };
 
@@ -139,6 +139,11 @@
             bindings = <&kp LG(NUMBER_3)>;
             key-positions = <3 4>;
         };
+
+        p4 {
+            bindings = <&kp LG(NUMBER_4)>;
+            key-positions = <4 5>;
+        };
     };
 
     behaviors {
@@ -149,7 +154,7 @@
             bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
-            tapping-term-ms = <190>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <180>;
             require-prior-idle-ms = <125>;
         };
@@ -344,20 +349,20 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &tph NUMBER_1 Q  &tph NUMBER_2 W  &tph NUMBER_3 E  &kp R          &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
-&lt 8 BSPC  &kp A            &kp S            &tph LSHFT D     &tph LCTRL F   &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&none       &kp Z            &kp X            &kp C            &kp V          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                                              &kp LGUI         &mt LSHFT TAB  &lt 4 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
+&kp ESCAPE      &tph NUMBER_1 Q  &tph NUMBER_2 W  &tph NUMBER_3 E  &kp R          &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
+&lt 8 BSPC      &kp A            &kp S            &tph LSHFT D     &tph LCTRL F   &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LANGUAGE_2  &kp Z            &kp X            &kp C            &kp V          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LANG1
+                                                  &kp LGUI         &mt LSHFT TAB  &lt 4 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
             >;
         };
 
         crst {
             display-name = "crst";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P  &tph NUMBER_5 B        &tph N6 SINGLE_QUOTE  &tph N7 J     &tph N8 U           &tph N9 Y        &tph NUMBER_0 K  &kp DEL
-&lt 8 BACKSPACE    &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T     &tph K_PASTE K_COPY    &kp MINUS             &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z M         &tph X M         &kp C              &kp D            &kp R                  &kp A                 &tph SEMI A   &kp COMMA           &kp DOT          &tph SLASH K     &kp LANG1
-                                                     &lt 7 LG(X)        &lt 7 TAB        &lt 4 SPACE            &lt 4 SPACE           &mo 5         &sl 9
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P     &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y        &tph NUMBER_0 J  &kp DEL
+&lt 8 BACKSPACE    &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T        &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &tph Z M         &tph X M         &kp C              &kp D               &kp R                  &kp COLON             &tph LBRC A    &tph RBRC COMMA     &kp DOT          &tph SLASH K     &kp LANG1
+                                                     &lt 7 LG(X)        &mt LEFT_SHIFT TAB  &lt 4 SPACE            &lt 4 SPACE           &mo 5          &sl 9
             >;
         };
 
@@ -391,10 +396,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp TILDE  &kp LPAR          &kp RPAR           &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp BACKSLASH
-&kp F1     &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &kp PLUS   &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp RBKT               &none                 &kp GRAVE
-&kp F7     &kp F8            &kp F9            &kp F10           &kp F11           &kp F12             &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RBRC               &kp PIPE              &kp TILDE
-                                               &kp LGUI          &trans            &kp SPACE           &none      &trans            &none
+&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp TILDE  &kp LPAR          &kp RPAR           &kp A       &kp NON_US_BACKSLASH  &kp BACKSLASH
+&kp F1     &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &kp CARET  &kp COMMA         &kp SEMICOLON      &kp DOLLAR  &kp COLON             &trans
+&kp F7     &kp F8            &kp F9            &kp F10           &kp F11           &kp F12             &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp A       &kp FSLH              &kp TILDE
+                                               &trans            &trans            &kp SPACE           &kp SPACE  &trans            &none
             >;
         };
 
