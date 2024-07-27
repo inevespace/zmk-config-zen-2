@@ -255,10 +255,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         crst {
             display-name = "crst";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P     &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 J  &kp DEL
-&lt 8 BACKSPACE    &tph LEFT_ALT N  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T        &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z M         &tph X M         &kp C              &kp D               &kp R                  &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH K     &kp LANG1
-                                                     &lt 7 LG(X)        &mt LEFT_SHIFT TAB  &lt 4 SPACE            &lt 4 SPACE           &mo 5          &key_repeat
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P  &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 J  &kp DEL
+&lt 8 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &tph Z M         &tph X M         &kp C              &kp D            &kp R                  &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH K     &kp LANG1
+                                                     &lt 7 LG(X)        &tph TAB R       &lt 4 SPACE            &lt 4 SPACE           &mo 5          &key_repeat
             >;
         };
 
