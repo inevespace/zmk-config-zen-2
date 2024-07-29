@@ -34,7 +34,7 @@
         };
 
         toplover {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <25 34>;
         };
 
@@ -45,13 +45,8 @@
         };
 
         auxfunc {
-            bindings = <&sl 6>;
+            bindings = <&sl 5>;
             key-positions = <5 17 29>;
-        };
-
-        ru {
-            bindings = <&tog 2>;
-            key-positions = <11 23 35>;
         };
 
         lctrl-combo {
@@ -63,7 +58,7 @@
         lwin-combo {
             bindings = <&kp V>;
             key-positions = <14 2>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         lsft-combo {
@@ -85,33 +80,33 @@
         };
 
         ralt-combo {
-            bindings = <&none>;
+            bindings = <&kp K>;
             key-positions = <22 34>;
-            layers = <1>;
+            layers = <0>;
         };
 
         left {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <8 7>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         right {
             bindings = <&kp RIGHT>;
             key-positions = <8 9>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         pgup {
             bindings = <&kp PG_UP>;
             key-positions = <8 19>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         pgdn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <8 21>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         copypaste {
@@ -150,6 +145,12 @@
             bindings = <&kp END>;
             key-positions = <8 20 21>;
             layers = <1>;
+        };
+
+        new-g-combo {
+            bindings = <&kp G>;
+            key-positions = <16 4>;
+            layers = <0>;
         };
     };
 
@@ -235,20 +236,13 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            display-name = "QWERTY";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+        new {
+            display-name = "new";
             bindings = <
-&kp ESCAPE      &tph NUMBER_1 Q  &tph NUMBER_2 W  &tph NUMBER_3 E  &kp R          &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
-&lt 8 BSPC      &kp A            &kp S            &tph LSHFT D     &tph LCTRL F   &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LANGUAGE_2  &kp Z            &kp X            &kp C            &kp V          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LANG1
-                                                  &kp LGUI         &mt LSHFT TAB  &lt 4 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 F  &tph NUMBER_3 W    &tph NUMBER_4 M  &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 J  &kp DEL
+&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN S  &tph LEFT_SHIFT N  &tph LCTRL T     &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &tph Z P         &tph X V         &kp L              &kp D            &kp R                  &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH B     &kp LANG1
+                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE            &lt 3 SPACE           &mo 4          &key_repeat
             >;
         };
 
@@ -256,19 +250,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             display-name = "crst";
             bindings = <
 &tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 P  &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 J  &kp DEL
-&lt 8 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
+&lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
 &kp LANG2          &tph Z M         &tph X M         &kp C              &kp D            &kp R                  &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH K     &kp LANG1
-                                                     &lt 7 LG(X)        &tph TAB R       &lt 4 SPACE            &lt 4 SPACE           &mo 5          &key_repeat
-            >;
-        };
-
-        ru {
-            display-name = "rus";
-            bindings = <
-&kp ESCAPE     &kp Q  &kp W  &kp E     &kp R                &kp T          &kp Y        &kp U  &kp I      &kp O    &kp P     &kp DEL
-&kp BACKSPACE  &kp A  &kp S  &kp D     &kp F                &kp G          &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LCTRL      &kp Z  &kp X  &kp C     &kp RU_CYRILLIC_ZHE  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                             &kp LGUI  &mt LSHFT TAB        &lt 4 SPACE    &lt 4 SPACE  &mo 5  &kp RALT
+                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE            &lt 3 SPACE           &mo 4          &key_repeat
             >;
         };
 
