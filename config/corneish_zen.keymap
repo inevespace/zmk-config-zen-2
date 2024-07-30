@@ -41,7 +41,7 @@
         rsft-combo {
             bindings = <&kp UP>;
             key-positions = <20 8>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         auxfunc {
@@ -58,19 +58,19 @@
         lwin-combo {
             bindings = <&kp V>;
             key-positions = <14 2>;
-            layers = <1 0>;
+            layers = <1>;
         };
 
         lsft-combo {
             bindings = <&kp G>;
             key-positions = <15 3>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         rctrl {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <7 19>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         lalt-combo {
@@ -148,8 +148,14 @@
         };
 
         new-g-combo {
-            bindings = <&kp G>;
+            bindings = <&kp V>;
             key-positions = <16 4>;
+            layers = <0>;
+        };
+
+        new-combo-lwin {
+            bindings = <&kp B>;
+            key-positions = <14 2>;
             layers = <0>;
         };
     };
@@ -239,9 +245,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         new {
             display-name = "new";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 F  &tph NUMBER_3 W    &tph NUMBER_4 M  &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 J  &kp DEL
-&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN S  &tph LEFT_SHIFT N  &tph LCTRL T     &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z P         &tph X V         &kp L              &kp D            &kp R                  &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH B     &kp LANG1
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 P  &tph NUMBER_3 F    &tph NUMBER_4 M  &tph NUMBER_5 PRCNT    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 J  &kp DEL
+&lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON        &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &tph Z W         &tph X B         &kp C              &kp D            &kp R                  &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH U     &kp LANG1
                                                      &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE            &lt 3 SPACE           &mo 4          &key_repeat
             >;
         };
