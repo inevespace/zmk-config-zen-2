@@ -50,7 +50,7 @@
         };
 
         lctrl-combo {
-            bindings = <&kp B>;
+            bindings = <&lk_ing 0 G>;
             key-positions = <16 4>;
             layers = <1 0>;
         };
@@ -62,7 +62,7 @@
         };
 
         lsft-combo {
-            bindings = <&kp G>;
+            bindings = <&kp V>;
             key-positions = <15 3>;
             layers = <1>;
         };
@@ -190,6 +190,18 @@
             require-prior-idle-ms = <100>;
             quick-tap-ms = <150>;
         };
+
+        lk_ing: lk_ing {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LK_ING";
+            bindings = <&ing_macro>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            require-prior-idle-ms = <100>;
+            quick-tap-ms = <150>;
+        };
     };
 
     macros {
@@ -198,6 +210,13 @@
             #binding-cells = <0>;
             bindings = <&kp Q &kp U>;
             label = "QU_MACRO";
+        };
+
+        ing_macro: ing_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G &kp SPACE>;
+            label = "ING_MACRO";
         };
     };
 
@@ -236,8 +255,8 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
     keymap {
         compatible = "zmk,keymap";
 
-        new {
-            display-name = "new";
+        csnt {
+            display-name = "csnt";
             bindings = <
 &tph GRAVE ESCAPE  &tph N1 P        &tph NUMBER_2 F  &tph NUMBER_3 L    &tph NUMBER_4 G  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
 &lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN S  &tph LEFT_SHIFT N  &tph LCTRL T     &tph SEMI COLON    &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
@@ -246,12 +265,12 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             >;
         };
 
-        crst {
-            display-name = "crst";
+        lnst {
+            display-name = "lnst";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 M  &tph NUMBER_3 F    &tph NUMBER_4 P  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 M  &tph NUMBER_3 F    &tph NUMBER_4 B  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 P  &kp DEL
 &lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON    &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z W         &kp X            &kp C              &kp D            &kp R              &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH U     &kp LANG1
+&kp LANG2          &tph Z W         &kp X            &kp C              &kp D            &kp R              &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH K     &kp LANG1
                                                      &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE        &lt 3 SPACE           &mo 4          &key_repeat
             >;
         };
