@@ -80,7 +80,7 @@
         };
 
         ralt-combo {
-            bindings = <&kp K>;
+            bindings = <&kp P>;
             key-positions = <22 10>;
             layers = <0>;
         };
@@ -268,9 +268,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         lnst {
             display-name = "lnst";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 M  &tph NUMBER_3 F    &tph NUMBER_4 B  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 P  &kp DEL
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 M  &tph NUMBER_3 F    &tph NUMBER_4 B  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
 &lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON    &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z W         &kp X            &kp C              &kp D            &kp R              &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH K     &kp LANG1
+&kp LANG2          &tph Z W         &kp X            &kp C              &kp D            &kp R              &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH P     &kp LANG1
                                                      &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE        &lt 3 SPACE           &mo 4          &key_repeat
             >;
         };
