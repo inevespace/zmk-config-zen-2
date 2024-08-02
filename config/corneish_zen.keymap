@@ -56,7 +56,7 @@
         };
 
         lwin-combo {
-            bindings = <&kp V>;
+            bindings = <&kp W>;
             key-positions = <14 2>;
             layers = <1>;
         };
@@ -74,15 +74,15 @@
         };
 
         lalt-combo {
-            bindings = <&kp Q>;
-            key-positions = <13 1>;
+            bindings = <&kp M>;
+            key-positions = <13 25>;
             layers = <0 1>;
         };
 
         ralt-combo {
-            bindings = <&kp P>;
-            key-positions = <22 10>;
-            layers = <0>;
+            bindings = <&kp K>;
+            key-positions = <22 34>;
+            layers = <1>;
         };
 
         left {
