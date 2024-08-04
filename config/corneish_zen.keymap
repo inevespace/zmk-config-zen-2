@@ -46,7 +46,7 @@
 
         auxfunc {
             bindings = <&sl 5>;
-            key-positions = <5 17 29>;
+            key-positions = <36 37 38>;
         };
 
         lctrl-combo {
@@ -111,7 +111,7 @@
 
         copypaste {
             bindings = <&tph K_PASTE K_COPY>;
-            key-positions = <25 26>;
+            key-positions = <5 17>;
             layers = <1>;
         };
 
@@ -151,6 +151,12 @@
             bindings = <&kp V>;
             key-positions = <14 2>;
             layers = <0>;
+        };
+
+        rwin-combo {
+            bindings = <&kp J>;
+            key-positions = <9 21>;
+            layers = <1 0>;
         };
     };
 
@@ -259,8 +265,8 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             display-name = "csnt";
             bindings = <
 &tph GRAVE ESCAPE  &tph N1 P        &tph NUMBER_2 F  &tph NUMBER_3 L    &tph NUMBER_4 G  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
-&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN S  &tph LEFT_SHIFT N  &tph LCTRL T     &tph SEMI COLON    &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z W         &kp X            &kp M              &kp D            &kp R              &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH U     &kp LANG1
+&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN S  &tph LEFT_SHIFT N  &tph LCTRL T     &tph SEMI LBKT     &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &tph Z W         &kp X            &kp M              &kp D            &kp RBKT           &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH U     &kp LANG1
                                                      &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE        &lt 3 SPACE           &mo 4          &key_repeat
             >;
         };
@@ -268,10 +274,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         lnst {
             display-name = "lnst";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 B  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
-&lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI COLON    &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &kp M            &kp X            &kp C              &kp D            &kp R              &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH P     &kp LANG1
-                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE        &lt 3 SPACE           &mo 4          &key_repeat
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_2 W  &tph NUMBER_3 F    &tph NUMBER_4 B  &tph NUMBER_5 LBKT    &tph N6 SINGLE_QUOTE  &tph N7 SEMI  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
+&lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph SEMI RBKT        &tph PLUS MINUS       &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &kp M            &kp X            &kp C              &kp D            &kp R                 &tph EQUAL BACKSLASH  &tph LBKT A   &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH P     &kp LANG1
+                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE           &lt 3 SPACE           &mo 4         &key_repeat
             >;
         };
 
