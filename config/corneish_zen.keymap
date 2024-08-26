@@ -52,13 +52,13 @@
         lctrl-combo {
             bindings = <&lk_ing 0 G>;
             key-positions = <16 4>;
-            layers = <1 0>;
+            layers = <1>;
         };
 
         lwin-combo {
-            bindings = <&kp W>;
+            bindings = <&kp M>;
             key-positions = <14 2>;
-            layers = <1>;
+            layers = <0>;
         };
 
         lsft-combo {
@@ -76,7 +76,7 @@
         lalt-combo {
             bindings = <&kp Z>;
             key-positions = <13 25>;
-            layers = <0 1>;
+            layers = <1>;
         };
 
         ralt-combo {
@@ -88,13 +88,13 @@
         left {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <8 7>;
-            layers = <1 0>;
+            layers = <1>;
         };
 
         right {
             bindings = <&kp RIGHT>;
             key-positions = <8 9>;
-            layers = <1 0>;
+            layers = <1>;
         };
 
         pgup {
@@ -110,7 +110,7 @@
         };
 
         copypaste {
-            bindings = <&tph K_PASTE K_COPY>;
+            bindings = <&tph C_AC_PASTE C_AC_COPY>;
             key-positions = <5 17>;
             layers = <1>;
         };
@@ -135,28 +135,23 @@
             key-positions = <4 5>;
         };
 
-        home {
-            bindings = <&kp HOME>;
-            key-positions = <8 19 20>;
-            layers = <1>;
-        };
-
-        end {
-            bindings = <&kp END>;
-            key-positions = <8 20 21>;
-            layers = <1>;
-        };
-
-        new-combo-lwin {
-            bindings = <&kp V>;
-            key-positions = <14 2>;
-            layers = <0>;
-        };
-
         rwin-combo {
             bindings = <&kp J>;
             key-positions = <9 21>;
-            layers = <1 0>;
+            layers = <1>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21>;
+            layers = <0 1>;
+            require-prior-idle-ms = <150>;
+        };
+
+        y-combo {
+            bindings = <&kp Y>;
+            key-positions = <9 21>;
+            layers = <1>;
         };
     };
 
@@ -264,10 +259,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         csnt {
             display-name = "csnt";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 P        &tph NUMBER_2 F  &tph NUMBER_3 L    &tph NUMBER_4 G  &tph NUMBER_5 J    &tph N6 SINGLE_QUOTE  &tph N7 COLON  &tph N8 U           &tph N9 Y               &tph NUMBER_0 K  &kp DEL
-&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN S  &tph LEFT_SHIFT N  &tph LCTRL T     &tph SEMI LBKT     &tph PLUS MINUS       &tph RCTRL O   &tph RIGHT_SHIFT E  &tph LEFT_WIN I         &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &tph Z W         &kp X            &kp M              &kp D            &kp RBKT           &tph EQUAL BACKSLASH  &tph LBKT A    &tph RBRC COMMA     &tph RIGHT_BRACKET DOT  &tph SLASH U     &kp LANG1
-                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE        &lt 3 SPACE           &mo 4          &key_repeat
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_3 W  &tph NUMBER_1 F    &tph NUMBER_5 P  &tph N7 K      &tph N0 SINGLE_QUOTE  &tph N6 COLON  &tph NUMBER_2 O     &tph NUMBER_4 U  &tph N8 SQT      &kp DEL
+&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T     &tph J LBKT    &tph PLUS MINUS       &tph RCTRL N   &tph RIGHT_SHIFT A  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &kp Z            &kp X            &kp G              &kp V            &kp RBKT       &tph EQUAL BACKSLASH  &kp B          &kp COMMA           &kp DOT          &tph FSLH D      &kp LANG1
+                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE    &lt 3 SPACE           &lt 4 E        &key_repeat
             >;
         };
 
@@ -339,10 +334,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         rnumpad {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &none
-&none  &none  &none  &none  &none  &none    &none           &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS      &trans
-&none  &none  &none  &none  &none  &none    &none           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &none
-                     &none  &none  &none    &none           &kp KP_NUMBER_0  &kp DOT
+&none  &none  &none  &none  &none  &none    &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK     &none
+&none  &none  &none  &none  &none  &none    &tph MINUS PLUS  &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &tph FSLH ASTRK  &trans
+&none  &none  &none  &none  &none  &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &none
+                     &none  &none  &none    &none            &kp KP_NUMBER_0  &kp DOT
             >;
         };
     };
