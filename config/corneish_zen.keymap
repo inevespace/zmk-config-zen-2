@@ -151,7 +151,7 @@
         y-combo {
             bindings = <&kp Y>;
             key-positions = <9 21>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
@@ -259,10 +259,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         csnt {
             display-name = "csnt";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_3 W  &tph NUMBER_1 F    &tph NUMBER_5 P  &tph N7 K      &tph N0 SINGLE_QUOTE  &tph N6 COLON  &tph NUMBER_2 O     &tph NUMBER_4 U  &tph N8 SQT      &kp DEL
-&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T     &tph J LBKT    &tph PLUS MINUS       &tph RCTRL N   &tph RIGHT_SHIFT A  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &kp Z            &kp X            &kp G              &kp V            &kp RBKT       &tph EQUAL BACKSLASH  &kp B          &kp COMMA           &kp DOT          &tph FSLH D      &kp LANG1
-                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE    &lt 3 SPACE           &lt 4 E        &key_repeat
+&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_3 W  &tph NUMBER_1 F    &tph NUMBER_5 P  &tph N7 K      &tph N0 FSLH          &tph N6 B     &tph NUMBER_2 O     &tph NUMBER_4 U  &tph N8 SQT      &kp DEL
+&lt 7 BACKSPACE    &tph LEFT_ALT C  &tph LEFT_WIN L  &tph LEFT_SHIFT S  &tph LCTRL T     &tph J LBKT    &tph PLUS MINUS       &tph RCTRL N  &tph RIGHT_SHIFT A  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
+&kp LANG2          &kp Z            &kp X            &kp G              &kp V            &kp RBKT       &tph EQUAL BACKSLASH  &kp SEMI      &kp COMMA           &kp DOT          &tph FSLH D      &kp LANG1
+                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE    &lt 3 SPACE           &lt 4 E       &key_repeat
             >;
         };
 
