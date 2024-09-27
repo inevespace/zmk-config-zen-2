@@ -74,7 +74,7 @@
         };
 
         lalt-combo {
-            bindings = <&kp Z>;
+            bindings = <&kp W>;
             key-positions = <13 25>;
             layers = <1>;
         };
@@ -110,7 +110,7 @@
         };
 
         copypaste {
-            bindings = <&tph C_AC_PASTE C_AC_COPY>;
+            bindings = <&tph K_PASTE K_COPY>;
             key-positions = <5 17>;
             layers = <1>;
         };
@@ -275,10 +275,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         lnst {
             display-name = "lnst";
             bindings = <
-&tph GRAVE ESCAPE  &tph N1 Q        &tph NUMBER_3 W  &tph N1 F          &tph NUMBER_5 P  &tph N7 LBKT    &tph N0 FSLH          &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 SQT      &kp DEL
-&lt 7 BACKSPACE    &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &tph Z RBKT     &tph PLUS MINUS       &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph LEFT_ALT H  &kp ENTER
-&kp LANG2          &kp M            &kp X            &kp C              &kp D            &kp E           &tph EQUAL BACKSLASH  &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH D     &kp LANG1
-                                                     &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE     &lt 3 SPACE           &mo 4         &key_repeat
+&lt 7 ESCAPE     &tph N1 Q        &tph NUMBER_3 P  &tph N1 F          &tph NUMBER_5 K  &tph N7 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X     &kp DEL
+&lt 4 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp Z           &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &lt 4 H       &kp SQT
+&kp LANG2        &kp M            &kp X            &kp C              &kp D            &kp E           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F  &kp LANG1
+                                                   &lt 6 LG(X)        &tph TAB R       &lt 3 SPACE     &lt 3 SPACE            &mo 4         &key_repeat
             >;
         };
 
@@ -331,10 +331,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         os {
             bindings = <
-&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &none  &none      &kp LG(K)  &none      &none  &none
-&none  &none             &none             &kp LSHFT         &none             &none         &none  &kp LG(H)  &kp LG(J)  &kp LG(L)  &none  &none
-&none  &none             &none             &none             &none             &none         &none  &none      &none      &none      &none  &none
-                                           &none             &none             &none         &none  &none      &none
+&none  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)    &none  &none               &kp LG(UP)    &none          &none  &none
+&none  &none             &none             &kp LSHFT         &none             &none         &none  &kp LG(LEFT_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)  &none  &none
+&none  &none             &none             &none             &none             &none         &none  &none               &none         &none          &none  &none
+                                           &none             &none             &none         &none  &none               &none
             >;
         };
 
