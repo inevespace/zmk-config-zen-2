@@ -74,7 +74,7 @@
         };
 
         lalt-combo {
-            bindings = <&kp W>;
+            bindings = <&kp M>;
             key-positions = <13 25>;
             layers = <1>;
         };
