@@ -80,7 +80,7 @@
         };
 
         ralt-combo {
-            bindings = <&kp K>;
+            bindings = <&kp X>;
             key-positions = <22 34>;
             layers = <1>;
         };
