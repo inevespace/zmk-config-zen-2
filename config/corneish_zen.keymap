@@ -51,7 +51,7 @@
         lctrl-combo {
             bindings = <&kp G>;
             key-positions = <16 4>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         lwin-combo {
@@ -278,9 +278,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         test {
             display-name = "test";
             bindings = <
-&lt 7 ESCAPE     &tph N1 M        &tph NUMBER_3 P  &tph N1 F          &tph NUMBER_5 K  &tph N7 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 SQT       &kp DEL
-&lt 4 BACKSPACE  &tph LEFT_ALT C  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp X
-&lt 7 LANG2      &kp W            &kp Z            &kp G              &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH L      &kp LANG1
+&lt 7 ESCAPE     &tph N1 M        &tph NUMBER_3 P  &tph N1 C          &tph NUMBER_5 K  &tph N7 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X         &kp DEL
+&lt 4 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
+&lt 7 LANG2      &kp W            &kp Z            &kp F              &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH U      &kp LANG1
                                                    &lt 6 LG(X)        &kp R            &lt 3 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
