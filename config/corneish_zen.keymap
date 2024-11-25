@@ -165,6 +165,12 @@
             key-positions = <10 22>;
             layers = <0>;
         };
+
+        lalt-combo-2 {
+            bindings = <&kp M>;
+            key-positions = <13 25>;
+            layers = <1 0>;
+        };
     };
 
     behaviors {
@@ -288,9 +294,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         lnst {
             display-name = "lnst";
             bindings = <
-&lt 7 ESCAPE     &tph N1 M        &tph NUMBER_3 P  &tph N1 G          &tph NUMBER_5 K  &tph N7 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X         &kp DEL
-&lt 4 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp K           &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
-&lt 7 LANG2      &kp W            &kp Z            &lk_ck 0 C         &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F      &kp LANG1
+&lt 7 ESCAPE     &tph N7 M        &tph NUMBER_3 P  &tph N1 C          &tph NUMBER_5 K  &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X         &kp DEL
+&lt 4 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
+&lt 7 LANG2      &kp W            &kp Z            &lk_ck 0 G         &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F      &kp LANG1
                                                    &lt 6 LG(X)        &kp R            &lt 3 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
