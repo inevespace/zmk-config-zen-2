@@ -2,11 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-  
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-      
-    steps:
-      - uses: actions/checkout@v4
-      - uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
+    - uses: actions/checkout@v4
+    - uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
