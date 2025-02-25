@@ -2,5 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    - uses: actions/checkout@v4
     - uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
