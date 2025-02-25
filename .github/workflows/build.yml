@@ -3,3 +3,6 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
+    
+  upload:
+    uses: actions/upload-artifact@v4
