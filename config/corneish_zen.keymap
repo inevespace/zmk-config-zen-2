@@ -234,7 +234,7 @@
         ing_macro: ing_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G &kp SPACE>;
+            bindings = <&kp I &kp N &kp G>;
             label = "ING_MACRO";
         };
 
@@ -286,7 +286,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             bindings = <
 &lt 7 ESCAPE     &tph NUMBER_7 M  &tph NUMBER_3 P  &tph N1 C          &tph NUMBER_5 K  &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X         &kp DEL
 &lt 4 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
-&lt 7 LANG2      &kp W            &kp Z            &lk_ing 0 G        &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F      &kp LANG1
+&lt 7 LANG2      &kp W            &kp Z            &lk_ing 0 G        &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &kp F             &kp LANG1
                                                    &lt 6 LG(X)        &kp R            &lt 3 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
@@ -359,10 +359,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         rnumpad {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp KP_NUMLOCK   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK     &none
-&none  &none  &none  &none  &none  &none    &tph MINUS PLUS  &kp KP_N4        &kp KP_NUMBER_5  &kp KP_NUMBER_6  &tph FSLH ASTRK  &trans
-&none  &none  &none  &none  &none  &none    &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &none
-                     &none  &none  &none    &none            &kp KP_NUMBER_0  &kp DOT
+&none  &none   &none   &none   &none   &none    &kp KP_NUMLOCK   &tph F7 KP_N7    &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK     &none
+&none  &trans  &trans  &trans  &trans  &none    &tph MINUS PLUS  &tph F4 KP_N4    &tph F5 KP_N5  &tph F6 KP_N6  &tph FSLH ASTRK  &trans
+&none  &none   &none   &none   &none   &none    &tph F11 KP_N0   &tph F1 KP_N1    &tph F2 KP_N2  &tph F3 KP_N3  &kp F12          &none
+                       &none   &none   &none    &none            &kp KP_NUMBER_0  &kp DOT
             >;
         };
     };
