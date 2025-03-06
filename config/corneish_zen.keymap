@@ -120,17 +120,17 @@
         };
 
         p2 {
-            bindings = <&kp LG(NUMBER_2)>;
+            bindings = <&kp LG(N2)>;
             key-positions = <2 3>;
         };
 
         p3 {
-            bindings = <&kp LG(NUMBER_3)>;
+            bindings = <&kp LG(N3)>;
             key-positions = <3 4>;
         };
 
         p4 {
-            bindings = <&kp LG(NUMBER_4)>;
+            bindings = <&kp LG(N4)>;
             key-positions = <4 5>;
         };
 
@@ -170,6 +170,26 @@
             bindings = <&kp M>;
             key-positions = <13 25>;
             layers = <1 0>;
+        };
+    };
+
+    macros {
+        qu_macro: qu_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+        };
+
+        ing_macro: ing_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G>;
+        };
+
+        ck_macro: ck_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp K>;
         };
     };
 
@@ -219,25 +239,7 @@
         };
     };
 
-    macros {
-        qu_macro: qu_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Q &kp U>;
-        };
 
-        ing_macro: ing_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp N &kp G>;
-        };
-
-        ck_macro: ck_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp K>;
-        };
-    };
 
     /*  Base (alpha) Layer  Hands Down Vibranium-Vb
     Building for a 36/42 key board
