@@ -176,7 +176,6 @@
     behaviors {
         tph: tap_preferr_hold {
             compatible = "zmk,behavior-hold-tap";
-            //label = "TPH";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
 
@@ -188,7 +187,6 @@
 
         lk_qu: lk_qu {
             compatible = "zmk,behavior-hold-tap";
-            //label = "LK_QU";
             bindings = <&qu_macro>, <&kp>;
 
             #binding-cells = <2>;
@@ -200,7 +198,6 @@
 
         lk_ck: lk_ck {
             compatible = "zmk,behavior-hold-tap";
-            //label = "LK_CK";
             bindings = <&ck_macro>, <&kp>;
 
             #binding-cells = <2>;
@@ -212,7 +209,6 @@
 
         lk_ing: lk_ing {
             compatible = "zmk,behavior-hold-tap";
-            //label = "LK_ING";
             bindings = <&ing_macro>, <&kp>;
 
             #binding-cells = <2>;
@@ -228,21 +224,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Q &kp U>;
-            //label = "QU_MACRO";
         };
 
         ing_macro: ing_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp I &kp N &kp G>;
-            //label = "ING_MACRO";
         };
 
         ck_macro: ck_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C &kp K>;
-            //label = "CK_MACRO";
         };
     };
 
@@ -256,7 +249,6 @@ LSFT │  B   P   L   D   V  │ │  -+   U   O   Y   F  │ RSFT
             ╰──────────────╯ ╰───────────────╯
 
                 l_alpha {
-                        label = "HD-Vb";
                         bindings = <
 
 &kp ESC  &ak_x  &ak_w   &ak_m   &ak_g   &ak_j           &HashDllr   &DotColn    &SlshStar   &DqtLbkt    &SqtRbkt  &kp BSPC
@@ -268,7 +260,6 @@ LSFT │  B   P   L   D   V  │ │  -+   U   O   Y   F  │ RSFT
                 };
 
                    l_akG {
-                            label = "l_akG";
                             bindings = <
 ______  &kp T   &kp D   &kp L   ______  ______      ______  ______  ______  ______  ______  ______
 ______  ______  ______  ______  ______  &ak_lk      ______  ______  ______  ______  ______  ______
