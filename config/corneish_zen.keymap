@@ -51,7 +51,7 @@
         lctrl-combo {
             bindings = <&kp M>;
             key-positions = <16 4>;
-            layers = <0 1>;
+            layers = <0>;
         };
 
         lwin-combo {
@@ -288,7 +288,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 &lt 7 ESCAPE     &tph N7 M        &tph N3 P        &tph N1 G          &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
 &lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
 &lt 7 LANG2      &kp W            &kp Z            &lk_ck 0 C         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F      &kp LANG1
-                                                   &lt 6 LG(X)        &kp R         &lt 3 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
+                                                   &lt 6 LG(X)        &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
 
@@ -298,7 +298,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 &kp ESCAPE      &kp Q  &kp W  &kp E  &kp R         &kp T          &kp Y      &kp U  &kp I      &kp O    &kp P     &kp LBKT
 &kp BSPC        &kp A  &kp S  &kp D  &tph LCTRL F  &kp G          &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V         &kp B          &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-                              &kp C  &kp V         &lt 3 SPACE    &kp SPACE  &kp N  &kp M
+                              &kp C  &kp V         &lt 7 SPACE    &kp SPACE  &kp N  &kp M
             >;
         };
 
