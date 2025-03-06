@@ -7,12 +7,12 @@
 //#include <dt-bindings/zmk/keys.h>
 // #include "keys_ru_phonetic.h"
 
+#include <behaviors/num_word.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <behaviors/num_word.dtsi>
 
 #define ______  &trans
 
@@ -194,9 +194,9 @@
         };
     };
 
-//&num_word {
-//  continue-list = <BSPC DEL DOT COMMA>;
-//};
+    //&num_word {
+    //  continue-list = <BSPC DEL DOT COMMA>;
+    //};
 
     behaviors {
         tph: tap_preferr_hold {
@@ -280,7 +280,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         main {
             display-name = "main";
             bindings = <
-&num_word 7           &tph N7 ESC      &tph N3 P    &tph N1 C      &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph N4 Y        &tph N8 X         &kp DEL
+&num_word 7      &tph N7 ESC      &tph N3 P    &tph N1 C      &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph N4 Y        &tph N8 X         &kp DEL
 &lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LGUI N  &tph LSHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
 &lt 7 LANG2      &kp W            &kp Z        &lk_ing 0 G    &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &kp F             &kp LANG1
                                                &lt 6 LG(X)    &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
@@ -353,10 +353,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         rnumpad {
             bindings = <
-&to 0  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none    &kp KP_NLCK      &tph F7 KP_N7  &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK    &none
-&to 1  &trans      &trans            &trans            &trans            &none    &tph MINUS PLUS  &tph F4 KP_N4  &tph F5 KP_N5  &tph F6 KP_N6  &tph F10 KP_N0  &trans
-&to 2  &none       &none             &none             &none             &none    &tph F11 KP_N0   &tph F1 KP_N1  &tph F2 KP_N2  &tph F3 KP_N3  &tph F12 SLASH  &none
-                                     &none             &none             &none    &none            &kp DOT        &kp DOT
+&to 0  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none        &kp KP_NLCK      &tph F7 KP_N7  &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK    &none
+&to 1  &trans      &trans            &trans            &trans            &trans       &tph MINUS PLUS  &tph F4 KP_N4  &tph F5 KP_N5  &tph F6 KP_N6  &tph F10 KP_N0  &trans
+&to 2  &none       &none             &none             &none             &none        &tph F11 KP_N0   &tph F1 KP_N1  &tph F2 KP_N2  &tph F3 KP_N3  &tph F12 SLASH  &none
+                                     &none             &none             &kp SPACE    &kp SPACE        &kp DOT        &trans
             >;
         };
     };
