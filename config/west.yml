@@ -15,7 +15,7 @@ manifest:
     - name: zmk-auto-layer
       remote: urob
       revision: v0.2 # set to same version as zmk above
-      import: app/west.yml
+#      import: app/west.yml
   self:
     path: config
  
