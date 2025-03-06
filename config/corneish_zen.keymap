@@ -49,7 +49,7 @@
         };
 
         lctrl-combo {
-            bindings = <&lk_qu 0 Q>;
+            bindings = <&kp M>;
             key-positions = <16 4>;
             layers = <0 1>;
         };
