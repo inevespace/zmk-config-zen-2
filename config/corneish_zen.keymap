@@ -312,10 +312,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp TILDE      &kp LPAR   &kp RPAR       &none       &none      &none
-&tog 1     &kp F2      &kp LBRC    &kp LBKT    &kp LPAR    &none         &kp BACKSLASH  &kp COMMA  &kp SEMICOLON  &kp DOLLAR  &kp COLON  &trans
-&tog 2     &kp F8      &kp RBRC    &kp RBKT    &kp RPAR    &none         &kp EQUAL      &kp CARET  &none          &kp DOLLAR  &kp FSLH   &kp TILDE
-                                   &trans      &trans      &kp SPACE     &kp SPACE      &trans     &none
+&to 0  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp TILDE      &kp LPAR   &kp RPAR       &kp GRAVE   &none      &none
+&to 1  &none       &kp LBRC    &kp LBKT    &kp LPAR    &none         &kp BACKSLASH  &kp COMMA  &kp SEMICOLON  &kp DOLLAR  &kp COLON  &trans
+&to 2  &none       &kp RBRC    &kp RBKT    &kp RPAR    &none         &kp EQUAL      &kp CARET  &none          &kp DOLLAR  &kp FSLH   &kp TILDE
+                               &trans      &trans      &kp SPACE     &kp SPACE      &trans     &none
             >;
         };
 
