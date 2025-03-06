@@ -73,7 +73,7 @@
         };
 
         ctrl-g-combo {
-            bindings = <&kp M>;
+            bindings = <&lk_ing 0 G>;
             key-positions = <4 16>;
             layers = <1>;
         };
@@ -312,9 +312,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&to 0  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp TILDE      &kp LPAR   &kp RPAR       &kp GRAVE   &none      &none
-&to 1  &none       &kp LBRC    &kp LBKT    &kp LPAR    &none         &kp BACKSLASH  &kp COMMA  &kp SEMICOLON  &kp DOLLAR  &kp COLON  &trans
-&to 2  &none       &kp RBRC    &kp RBKT    &kp RPAR    &none         &kp EQUAL      &kp CARET  &none          &kp DOLLAR  &kp FSLH   &kp TILDE
+&none  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)    &kp TILDE      &kp LPAR   &kp RPAR       &kp GRAVE   &none      &none
+&none  &none       &kp LBRC    &kp LBKT    &kp LPAR    &none         &kp BACKSLASH  &kp COMMA  &kp SEMICOLON  &kp DOLLAR  &kp COLON  &trans
+&none  &none       &kp RBRC    &kp RBKT    &kp RPAR    &none         &kp EQUAL      &kp CARET  &none          &kp DOLLAR  &kp FSLH   &kp TILDE
                                &trans      &trans      &kp SPACE     &kp SPACE      &trans     &none
             >;
         };
@@ -348,9 +348,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         rnumpad {
             bindings = <
-&none  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none    &kp KP_NUMLOCK   &tph F7 KP_N7  &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK     &none
-&none  &trans      &trans            &trans            &trans            &none    &tph MINUS PLUS  &tph F4 KP_N4  &tph F5 KP_N5  &tph F6 KP_N6  &tph FSLH ASTRK  &trans
-&none  &none       &none             &none             &none             &none    &tph F11 KP_N0   &tph F1 KP_N1  &tph F2 KP_N2  &tph F3 KP_N3  &kp F12          &none
+&to 0  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none    &kp KP_NUMLOCK   &tph F7 KP_N7  &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK     &none
+&to 1  &trans      &trans            &trans            &trans            &none    &tph MINUS PLUS  &tph F4 KP_N4  &tph F5 KP_N5  &tph F6 KP_N6  &tph FSLH ASTRK  &trans
+&to 2  &none       &none             &none             &none             &none    &tph F11 KP_N0   &tph F1 KP_N1  &tph F2 KP_N2  &tph F3 KP_N3  &kp F12          &none
                                      &none             &none             &none    &none            &kp KP_N0      &kp DOT
             >;
         };
