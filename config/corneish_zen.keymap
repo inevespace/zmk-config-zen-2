@@ -275,8 +275,8 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         test {
             display-name = "test";
             bindings = <
-&lt 7 ESCAPE     &tph NUMBER_7 M  &tph NUMBER_3 P  &tph N1 C          &tph NUMBER_5 K  &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X         &kp DEL
-&lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
+&lt 7 ESCAPE     &tph N7 M        &tph N3 P        &tph N1 C          &tph N5 K        &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph N4 Y  &tph N8 X               &kp DEL
+&lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LGUI N      &tph LSHIFT S      &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
 &lt 7 LANG2      &kp W            &kp Z            &lk_ing 0 G        &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &kp F             &kp LANG1
                                                    &lt 6 LG(X)        &kp R            &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
@@ -285,7 +285,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         lnst {
             display-name = "lnst";
             bindings = <
-&lt 7 ESCAPE     &tph N7 M        &tph NUMBER_3 P  &tph N1 G          &tph NUMBER_5 K  &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph NUMBER_2 U     &tph NUMBER_4 Y  &tph N8 X         &kp DEL
+&lt 7 ESCAPE     &tph N7 M        &tph N3 P        &tph N1 G          &tph N5 K        &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
 &lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T     &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
 &lt 7 LANG2      &kp W            &kp Z            &lk_ck 0 C         &kp D            &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F      &kp LANG1
                                                    &lt 6 LG(X)        &kp R            &lt 3 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
@@ -312,7 +312,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp TILDE      &kp LPAR   &kp RPAR       &kp A       &none      &none
+&kp GRAVE  &kp LG(N1)        &kp LG(N2)        &kp LG(N3)        &kp LG(N4)        &kp LG(N5)          &kp TILDE      &kp LPAR   &kp RPAR       &kp A       &none      &none
 &kp F1     &kp F2            &kp LBRC          &kp LBKT          &kp LPAR          &none               &kp BACKSLASH  &kp COMMA  &kp SEMICOLON  &kp DOLLAR  &kp COLON  &trans
 &kp F7     &kp F8            &kp RBRC          &kp RBKT          &kp RPAR          &none               &kp EQUAL      &kp CARET  &none          &kp DOLLAR  &kp FSLH   &kp TILDE
                                                &trans            &trans            &kp SPACE           &kp SPACE      &trans     &none
@@ -321,13 +321,12 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         nav {
             bindings = <
-&kp C_MEDIA_WWW       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp C_VOLUME_UP      &none  &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &kp PG_UP  &none
-&kp C_BRIGHTNESS_INC  &sk LEFT_ALT      &sk LEFT_META     &sk LEFT_SHIFT    &sk LCTRL         &kp C_VOLUME_DOWN    &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &none
+&kp C_MEDIA_WWW       &kp LG(N1)        &kp LG(N2)        &kp LG(N3)        &kp LG(N4)        &kp C_VOL_UP         &none  &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)  &kp PG_UP  &none
+&kp C_BRIGHTNESS_INC  &sk LEFT_ALT      &sk LMETA         &sk LSHIFT        &sk LCTRL         &kp C_VOL_DN         &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp PG_DN  &none
 &kp C_BRIGHTNESS_DEC  &kp C_AL_WWW      &kp C_PREVIOUS    &kp C_PLAY_PAUSE  &kp C_NEXT        &kp K_MUTE           &none  &kp HOME        &kp PAGE_DOWN   &kp END        &none      &none
                                                           &none             &none             &none                &none  &none           &none
             >;
 
-            display-name = "nav";
         };
 
         aux {
@@ -353,7 +352,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 &none  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none    &kp KP_NUMLOCK   &tph F7 KP_N7    &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK     &none
 &none  &trans      &trans            &trans            &trans            &none    &tph MINUS PLUS  &tph F4 KP_N4    &tph F5 KP_N5  &tph F6 KP_N6  &tph FSLH ASTRK  &trans
 &none  &none       &none             &none             &none             &none    &tph F11 KP_N0   &tph F1 KP_N1    &tph F2 KP_N2  &tph F3 KP_N3  &kp F12          &none
-                                     &none             &none             &none    &none            &kp KP_NUMBER_0  &kp DOT
+                                     &none             &none             &none    &none            &kp KP_N0  &kp DOT
             >;
         };
     };
