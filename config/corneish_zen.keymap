@@ -16,6 +16,11 @@
 
 #define ______  &trans
 
+&lt {
+    quick-tap-ms = <200>;
+    flavor = "balanced";
+};
+
 / {
     chosen {
         zmk,matrix_transform = &default_transform;
@@ -27,16 +32,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        tocmk {
-            bindings = <&kp B>;
-            key-positions = <24 35>;
-        };
-
-        toplover {
-            bindings = <&kp A>;
-            key-positions = <25 34>;
-        };
 
         rsft-combo {
             bindings = <&kp UP>;
@@ -162,15 +157,27 @@
         };
 
         l-combo {
-            bindings = <&kp L>;
+            bindings = <&none>;
             key-positions = <10 22>;
             layers = <0>;
         };
 
-        lalt-combo-2 {
+        lalt-combo {
             bindings = <&kp M>;
             key-positions = <13 25>;
             layers = <1 0>;
+        };
+
+        l-alt-combo-test {
+            bindings = <&tph LALT L>;
+            key-positions = <13 25>;
+            layers = <1>;
+        };
+
+        l-win-combo-test {
+            bindings = <&tph LGUI N>;
+            key-positions = <14 2>;
+            layers = <0 1>;
         };
     };
 
@@ -290,10 +297,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         test {
             display-name = "test";
             bindings = <
-&none            &tph N7 ESC      &tph N3 P        &tph N1 C          &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
-&lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LEFT_WIN N  &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
-&lt 7 LANG2      &kp W            &kp Z            &lk_qu 0 Q         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &tph SLASH F      &kp LANG1
-                                                   &lt 6 LG(X)        &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
+&none            &tph N7 ESC  &tph N3 P  &tph N1 C          &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
+&lt 7 BACKSPACE  &kp M        &kp B      &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
+&lt 7 LANG2      &kp W        &kp Z      &lk_qu 0 Q         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &kp F             &kp LANG1
+                                         &lt 6 LG(X)        &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
 
