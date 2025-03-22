@@ -111,17 +111,17 @@
         };
 
         p1 {
-            bindings = <&kp LG(N1)>;
+            bindings = <&kp EXCLAMATION>;
             key-positions = <1 2>;
         };
 
         p2 {
-            bindings = <&kp LG(N2)>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 3>;
         };
 
         p3 {
-            bindings = <&kp LG(N3)>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <3 4>;
         };
 
@@ -158,7 +158,7 @@
         };
 
         l-alt-combo-test {
-            bindings = <&tph LALT L>;
+            bindings = <&tph LALT M>;
             key-positions = <13 25>;
             layers = <1>;
         };
@@ -284,7 +284,7 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             bindings = <
 &num_word 7      &tph N7 ESC      &tph N3 P    &tph N1 C      &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph N4 Y        &tph N8 X         &kp DEL
 &lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LGUI N  &tph LSHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
-&lt 7 LANG2      &kp W            &kp Z        &lk_ing 0 G    &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &kp COMMA           &kp DOT          &kp F             &kp QMARK
+&lt 7 ESC        &kp W            &kp Z        &lk_ing 0 G    &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &kp COMMA           &kp DOT          &kp F             &kp QMARK
                                                &lt 6 LG(X)    &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
@@ -293,8 +293,8 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
             display-name = "test";
             bindings = <
 &none            &tph N7 ESC      &tph N3 P    &tph N1 C          &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
-&lt 7 BACKSPACE  &tph LEFT_ALT M  &tph LWIN N  &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
-&lt 7 LANG2      &kp W            &kp Z        &lk_qu 0 Q         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &kp COMMA           &kp DOT          &kp F             &kp QMARK
+&lt 7 BACKSPACE  &tph LEFT_ALT L  &tph LWIN N  &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
+&lt 7 ESC        &kp W            &kp Z        &lk_qu 0 Q         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &kp COMMA           &kp DOT          &kp F             &kp QMARK
                                                &lt 6 LG(X)        &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
