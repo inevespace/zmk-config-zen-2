@@ -125,11 +125,6 @@
             key-positions = <3 4>;
         };
 
-        p4 {
-            bindings = <&kp LG(N4)>;
-            key-positions = <4 5>;
-        };
-
         rwin-combo {
             bindings = <&kp J>;
             key-positions = <9 21>;
@@ -169,8 +164,14 @@
         };
 
         l-win-combo-test {
-            bindings = <&tph LGUI N>;
+            bindings = <&tph LGUI B>;
             key-positions = <14 2>;
+            layers = <1>;
+        };
+
+        ctrl-combo-g2 {
+            bindings = <&lk_ing 0 G>;
+            key-positions = <16 28>;
             layers = <1>;
         };
     };
@@ -206,8 +207,8 @@
             bindings = <&kp>, <&kp>;
 
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <160>;
+            quick-tap-ms = <160>;
             require-prior-idle-ms = <125>;
         };
 
@@ -291,10 +292,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
         test {
             display-name = "test";
             bindings = <
-&none            &tph N7 ESC  &tph N3 P  &tph N1 C          &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
-&lt 7 BACKSPACE  &kp M        &kp B      &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
-&lt 7 LANG2      &kp W        &kp Z      &lk_qu 0 Q         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &kp F             &kp LANG1
-                                         &lt 6 LG(X)        &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
+&none            &tph N7 ESC      &tph N3 P    &tph N1 C          &tph N5 K     &tph N9 LBKT    &tph N0 RIGHT_BRACKET  &tph N6 SEMI  &tph N2 U           &tph NUMBER_4 Y  &tph N8 X         &kp DEL
+&lt 7 BACKSPACE  &tph LEFT_ALT M  &tph LWIN N  &tph LEFT_SHIFT S  &tph LCTRL T  &kp FSLH        &tph PLUS MINUS        &tph RCTRL O  &tph RIGHT_SHIFT E  &tph LEFT_WIN I  &tph RIGHT_ALT H  &kp SQT
+&lt 7 LANG2      &kp W            &kp Z        &lk_qu 0 Q         &kp D         &kp Q           &tph EQUAL BACKSLASH   &kp A         &tph LT COMMA       &tph GT DOT      &kp F             &kp LANG1
+                                               &lt 6 LG(X)        &kp R         &lt 7 SPACE     &lt 3 SPACE            &lt 4 TAB     &key_repeat
             >;
         };
 
@@ -336,9 +337,9 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         aux {
             bindings = <
-&bt BT_NXT  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &none  &none    &none  &none  &none            &none            &none            &rgb_ug RGB_TOG
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none  &none    &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
-&sys_reset  &bootloader    &soft_off      &out OUT_TOG   &none  &none    &none  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
+&bt BT_NXT  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &to 0  &none    &none  &none  &none            &none            &none            &rgb_ug RGB_TOG
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &to 1  &none    &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF
+&sys_reset  &bootloader    &soft_off      &out OUT_TOG   &to 2  &none    &none  &none  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFR
                                           &none          &none  &none    &none  &none  &none
             >;
         };
@@ -354,10 +355,10 @@ ______  ______  ______  ______  ______  ______      ______  ______  ______  ____
 
         rnumpad {
             bindings = <
-&to 0  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none        &kp KP_NLCK      &tph F7 KP_N7  &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK    &none
-&to 1  &trans      &trans            &trans            &trans            &trans       &tph MINUS PLUS  &tph F4 KP_N4  &tph F5 KP_N5  &tph F6 KP_N6  &tph F10 KP_N0  &trans
-&to 2  &none       &none             &none             &none             &none        &tph F11 KP_N0   &tph F1 KP_N1  &tph F2 KP_N2  &tph F3 KP_N3  &tph F12 SLASH  &none
-                                     &none             &none             &kp SPACE    &kp SPACE        &kp DOT        &trans
+&none      &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &none        &kp KP_NLCK      &tph F7 KP_N7  &tph F8 KP_N8  &tph F9 KP_N9  &kp ASTERISK    &none
+&trans     &trans      &trans            &trans            &trans            &trans       &tph MINUS PLUS  &tph F4 KP_N4  &tph F5 KP_N5  &tph F6 KP_N6  &tph F10 KP_N0  &trans
+&kp LANG2  &kp LANG1   &none             &none             &none             &none        &tph F11 KP_N0   &tph F1 KP_N1  &tph F2 KP_N2  &tph F3 KP_N3  &tph F12 SLASH  &kp LANG1
+                                         &none             &none             &kp SPACE    &kp SPACE        &kp DOT        &trans
             >;
         };
     };
